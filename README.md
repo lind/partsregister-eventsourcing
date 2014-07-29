@@ -12,5 +12,5 @@ Start Jetty med
 java -jar target/partsregister-eventsourcing-1.0-SNAPSHOT.jar server partsregister.yml
 ```
 
-http://localhost:8080
-admin: 8081
+http://localhost:8080  
+admin port: 8081
