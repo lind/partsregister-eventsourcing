@@ -3,9 +3,6 @@ package ske.part.partsregister.infrastructure;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.validator.constraints.Length;
 
-/**
- * Created by jonas on 29.07.14.
- */
 public class Saying {
     private long id;
 
