@@ -1,42 +1,54 @@
 package ske.part.partsregister.interfaces;
 
-import java.util.concurrent.atomic.AtomicLong;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
+import javax.servlet.http.HttpServletResponse;
+import javax.ws.rs.*;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
 import com.codahale.metrics.annotation.Timed;
+import com.google.common.base.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import ske.part.partsregister.application.PartCommandHandler;
-import ske.part.partsregister.infrastructure.PartDTO;
 
-@Path("/part")
+@Path("/partview")
 @Produces(MediaType.APPLICATION_JSON)
 public class PartViewResource {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-//        private final String template;
-//        private final String defaultName;
-        private final AtomicLong counter;
-    private PartCommandHandler commandHandler;
+    private PartViewStore viewStore;
 
-        public PartViewResource(PartCommandHandler commandHandler) {
-            this.commandHandler = commandHandler;
-            // String template, String defaultName
-//            this.template = template;
-//            this.defaultName = defaultName;
-            this.counter = new AtomicLong();
+    public PartViewResource(PartViewStore viewStore) {
+        this.viewStore = viewStore;
+    }
+
+    @GET
+    @Timed
+    @Produces(MediaType.TEXT_PLAIN)
+    public PartDTO hentPart(@QueryParam("partId") String partId) {
+        logger.debug("/partview - hentPart() - partId: {}", partId);
+
+        Optional<PartDTO> part = viewStore.hentPart(partId);
+
+        if (!part.isPresent()) {
+            throw new WebApplicationException(Response.Status.NOT_FOUND);
         }
 
-        @GET
-        @Timed
-        public PartDTO hentPart(@QueryParam("partId") String partId) {
-            logger.debug("/part.hentPart() - partId: {}", partId);
+        return part.orNull();
+    }
 
-//            final String value = String.format(template, partId);
-            return new PartDTO("testFornavn", "testEtternavn");
+    @GET
+    @Path("/{id}")
+    @Timed
+    public PartDTO hentPartMedId(@PathParam("id") String partId) {
+        logger.debug("/partview - hentPartMedId() - partId: {}", partId);
+
+        Optional<PartDTO> part = viewStore.hentPart(partId);
+
+        if (!part.isPresent()) {
+            throw new WebApplicationException(Response.Status.NOT_FOUND);
         }
+
+        return part.orNull();
+    }
 }

@@ -5,9 +5,9 @@ import static org.junit.Assert.assertThat;
 
 import java.util.List;
 
-import org.junit.Ignore;
+import com.google.common.base.Optional;
+import com.google.common.eventbus.EventBus;
 import org.junit.Test;
-import ske.eventsourcing.event.DomainEvent;
 import ske.eventsourcing.event.Event;
 import ske.eventsourcing.eventstore.EventSourceIdentifier;
 import ske.eventsourcing.eventstore.EventStore;
@@ -25,7 +25,7 @@ public class PartCommandHandlerTest {
 
         EventStore eventStore = new InMemoryEventStore();
 
-        PartCommandHandler partCommandHandler = new PartCommandHandler(eventStore);
+        PartCommandHandler partCommandHandler = new PartCommandHandler(eventStore, Optional.<EventBus> absent());
         EventSourceIdentifier id = new StringEventSourceIdentifier("1");
 
         // when
@@ -43,7 +43,7 @@ public class PartCommandHandlerTest {
         EventStore eventStore = new InMemoryEventStore();
 
 
-        PartCommandHandler partCommandHandler = new PartCommandHandler(eventStore);
+        PartCommandHandler partCommandHandler = new PartCommandHandler(eventStore, Optional.<EventBus> absent());
         EventSourceIdentifier id = new StringEventSourceIdentifier("12");
 
         // when

@@ -1,0 +1,11 @@
+ske/eventsourcing/util/ReflectionUtilsTest.class
+ske/eventsourcing/util/ReflectionUtilsTest$TestFornavnEndretEvent.class
+ske/eventsourcing/domain/DummyChangeAddressEvent.class
+ske/eventsourcing/domain/DummyAggregateCreatedEvent.class
+ske/eventsourcing/domain/DummyChangedAgeEvent.class
+ske/eventsourcing/domain/DummyAggregateRoot.class
+ske/eventsourcing/domain/AggregateRootTest.class
+ske/eventsourcing/util/ReflectionUtilsTest$TestPerson.class
+ske/part/partsregister/domain/part/PartTest.class
+ske/eventsourcing/domain/DummyChangedNameEvent.class
+ske/part/partsregister/application/PartCommandHandlerTest.class
