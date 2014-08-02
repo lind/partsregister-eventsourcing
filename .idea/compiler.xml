@@ -25,6 +25,9 @@
         <module name="partsregister-eventsourcing" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="partsregister-eventsourcing" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 

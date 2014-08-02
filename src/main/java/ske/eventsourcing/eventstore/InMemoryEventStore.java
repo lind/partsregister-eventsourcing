@@ -26,8 +26,8 @@ public class InMemoryEventStore extends BaseEventStore {
 		log.debug("Loading events with key:{}", key);
 
 		List<Event> events = eventStorage.get(key);
-		log.debug("Nr of events from source with type:{} and id:{} are:{}", new Object[] { type, id,
-				(null == events ? 0 : events.size()) });
+		log.debug("Nr of events from source with type:{} and id:{} are:{}", type, id,
+                (null == events ? 0 : events.size()));
 
 		T eventSource = createEventSource(type, id);
 
@@ -44,12 +44,12 @@ public class InMemoryEventStore extends BaseEventStore {
 		List<Event> events = eventStorage.get(key);
 
 		if (null == events) {
-			events = new ArrayList<Event>();
+			events = new ArrayList<>();
 		}
 
 		int numberOfStoredEvents = events.size();
         List<Event> eventsToSave = eventsource.getUnsavedEvents();
-        log.debug("save() - number of events before save: {}", numberOfStoredEvents);
+        log.debug("save() - number of events on {} before save: {}", eventsource.getEventSourceIdentifier().asString(), numberOfStoredEvents);
 		for (Event event : eventsToSave) {
 			event.setSequenceNumber(++numberOfStoredEvents);
 			events.add(event);
@@ -99,7 +99,7 @@ public class InMemoryEventStore extends BaseEventStore {
 			if (id == null) {
 				if (other.id != null)
 					return false;
-			} else if (!id.equals(other.id))
+			} else if (!id.asString().equals(other.id.asString()))
 				return false;
 			if (type == null) {
 				if (other.type != null)

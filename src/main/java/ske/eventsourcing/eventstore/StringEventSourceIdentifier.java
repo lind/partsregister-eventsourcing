@@ -11,4 +11,5 @@ public class StringEventSourceIdentifier implements EventSourceIdentifier {
     @Override public String asString() {
         return identifier;
     }
+
 }

@@ -5,7 +5,6 @@ import org.slf4j.LoggerFactory;
 import ske.eventsourcing.domain.AnnotatedAggregateRoot;
 import ske.eventsourcing.event.EventHandler;
 import ske.eventsourcing.eventstore.EventSourceIdentifier;
-import ske.eventsourcing.eventstore.UUIDEventSourceIdentifier;
 
 public class Part extends AnnotatedAggregateRoot {
 

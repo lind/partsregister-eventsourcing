@@ -1,0 +1,1266 @@
+INFO  [2014-08-01 11:19:19,487] io.dropwizard.server.ServerFactory: Starting Partsregister
+                       _                                    _ 
+   _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
+  / _ \ \ / / _ \ '_ \| __/ __|/ _ \| | | | '__/ __/ _ \/ _` |
+ |  __/\ V /  __/ | | | |_\__ \ (_) | |_| | | | (_|  __/ (_| |
+  \___| \_/ \___|_| |_|\__|___/\___/ \__,_|_|  \___\___|\__,_|
+
+INFO  [2014-08-01 11:19:19,639] org.eclipse.jetty.setuid.SetUIDListener: Opened application@64255c05{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2014-08-01 11:19:19,641] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@5c171c3f{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2014-08-01 11:19:19,646] org.eclipse.jetty.server.Server: jetty-9.0.z-SNAPSHOT
+INFO  [2014-08-01 11:19:19,848] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2014-08-01 11:19:19,968] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
+    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+
+INFO  [2014-08-01 11:19:20,474] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@38ba271{/,null,AVAILABLE}
+INFO  [2014-08-01 11:19:20,483] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2014-08-01 11:19:20,500] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@3a02dc38{/,null,AVAILABLE}
+INFO  [2014-08-01 11:19:20,532] org.eclipse.jetty.server.ServerConnector: Started application@64255c05{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2014-08-01 11:19:20,557] org.eclipse.jetty.server.ServerConnector: Started admin@5c171c3f{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2014-08-01 11:23:02,507] org.eclipse.jetty.server.ServerConnector: Stopped application@64255c05{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2014-08-01 11:23:02,527] org.eclipse.jetty.server.ServerConnector: Stopped admin@5c171c3f{HTTP/1.1}{0.0.0.0:8081}
+INFO  [2014-08-01 11:23:02,532] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@3a02dc38{/,null,UNAVAILABLE}
+INFO  [2014-08-01 11:23:02,534] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@38ba271{/,null,UNAVAILABLE}
+INFO  [2014-08-01 11:23:32,803] io.dropwizard.server.ServerFactory: Starting Partsregister
+                       _                                    _ 
+   _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
+  / _ \ \ / / _ \ '_ \| __/ __|/ _ \| | | | '__/ __/ _ \/ _` |
+ |  __/\ V /  __/ | | | |_\__ \ (_) | |_| | | | (_|  __/ (_| |
+  \___| \_/ \___|_| |_|\__|___/\___/ \__,_|_|  \___\___|\__,_|
+
+INFO  [2014-08-01 11:23:33,129] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2014-08-01 11:23:33,267] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
+    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+
+INFO  [2014-08-01 11:23:33,816] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2014-08-01 11:29:08,757] io.dropwizard.server.ServerFactory: Starting Partsregister
+                       _                                    _ 
+   _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
+  / _ \ \ / / _ \ '_ \| __/ __|/ _ \| | | | '__/ __/ _ \/ _` |
+ |  __/\ V /  __/ | | | |_\__ \ (_) | |_| | | | (_|  __/ (_| |
+  \___| \_/ \___|_| |_|\__|___/\___/ \__,_|_|  \___\___|\__,_|
+
+INFO  [2014-08-01 11:29:09,094] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2014-08-01 11:29:09,249] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
+    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+
+INFO  [2014-08-01 11:29:09,831] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2014-08-01 11:30:22,810] io.dropwizard.server.ServerFactory: Starting Partsregister
+                       _                                    _ 
+   _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
+  / _ \ \ / / _ \ '_ \| __/ __|/ _ \| | | | '__/ __/ _ \/ _` |
+ |  __/\ V /  __/ | | | |_\__ \ (_) | |_| | | | (_|  __/ (_| |
+  \___| \_/ \___|_| |_|\__|___/\___/ \__,_|_|  \___\___|\__,_|
+
+INFO  [2014-08-01 11:30:23,170] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2014-08-01 11:30:23,325] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
+    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+
+ERROR [2014-08-01 11:30:23,898] com.sun.jersey.spi.inject.Errors: The following errors and warnings have been detected with resource and/or provider classes:
+  SEVERE: Consuming media type conflict. The resource methods public void ske.part.partsregister.infrastructure.PartResource.opprettPart(com.google.common.base.Optional) and public void ske.part.partsregister.infrastructure.PartResource.opprettPart(java.lang.String) can consume the same media type
+WARN  [2014-08-01 11:30:23,907] /: unavailable
+! com.sun.jersey.spi.inject.Errors$ErrorMessagesException: null
+! at com.sun.jersey.spi.inject.Errors.processErrorMessages(Errors.java:170) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.inject.Errors.postProcess(Errors.java:136) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:199) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:790) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.initiate(ServletContainer.java:491) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:540) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:349) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:812) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:288) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:732) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:92) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.RequestLogHandler.doStart(RequestLogHandler.java:131) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:233) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.start(Server.java:342) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.doStart(Server.java:290) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.Cli.run(Cli.java:70) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.Application.run(Application.java:72) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at ske.part.partsregister.infrastructure.PartsregisterApplication.main(PartsregisterApplication.java:24) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+WARN  [2014-08-01 11:30:23,910] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED i.d.j.MutableServletContextHandler@1e7f1e6b{/,null,STARTING}: javax.servlet.ServletException: com.sun.jersey.spi.container.servlet.ServletContainer-62cf484e@668580be==com.sun.jersey.spi.container.servlet.ServletContainer,1,false
+! com.sun.jersey.spi.inject.Errors$ErrorMessagesException: null
+! at com.sun.jersey.spi.inject.Errors.processErrorMessages(Errors.java:170) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.inject.Errors.postProcess(Errors.java:136) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:199) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:790) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.initiate(ServletContainer.java:491) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:540) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! ... 36 common frames omitted
+! Causing: javax.servlet.ServletException: com.sun.jersey.spi.container.servlet.ServletContainer-62cf484e@668580be==com.sun.jersey.spi.container.servlet.ServletContainer,1,false
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:561) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:349) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:812) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:288) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:732) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:92) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.RequestLogHandler.doStart(RequestLogHandler.java:131) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:233) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.start(Server.java:342) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.doStart(Server.java:290) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.Cli.run(Cli.java:70) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.Application.run(Application.java:72) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at ske.part.partsregister.infrastructure.PartsregisterApplication.main(PartsregisterApplication.java:24) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+WARN  [2014-08-01 11:30:23,912] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED com.codahale.metrics.jetty9.InstrumentedHandler@2ba61271: javax.servlet.ServletException: com.sun.jersey.spi.container.servlet.ServletContainer-62cf484e@668580be==com.sun.jersey.spi.container.servlet.ServletContainer,1,false
+! com.sun.jersey.spi.inject.Errors$ErrorMessagesException: null
+! at com.sun.jersey.spi.inject.Errors.processErrorMessages(Errors.java:170) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.inject.Errors.postProcess(Errors.java:136) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:199) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:790) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.initiate(ServletContainer.java:491) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:540) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! ... 36 common frames omitted
+! Causing: javax.servlet.ServletException: com.sun.jersey.spi.container.servlet.ServletContainer-62cf484e@668580be==com.sun.jersey.spi.container.servlet.ServletContainer,1,false
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:561) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:349) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:812) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:288) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:732) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:92) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.RequestLogHandler.doStart(RequestLogHandler.java:131) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:233) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.start(Server.java:342) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.doStart(Server.java:290) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.Cli.run(Cli.java:70) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.Application.run(Application.java:72) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at ske.part.partsregister.infrastructure.PartsregisterApplication.main(PartsregisterApplication.java:24) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+WARN  [2014-08-01 11:30:23,914] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED io.dropwizard.jetty.RoutingHandler@2404cf1a: javax.servlet.ServletException: com.sun.jersey.spi.container.servlet.ServletContainer-62cf484e@668580be==com.sun.jersey.spi.container.servlet.ServletContainer,1,false
+! com.sun.jersey.spi.inject.Errors$ErrorMessagesException: null
+! at com.sun.jersey.spi.inject.Errors.processErrorMessages(Errors.java:170) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.inject.Errors.postProcess(Errors.java:136) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:199) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:790) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.initiate(ServletContainer.java:491) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:540) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! ... 36 common frames omitted
+! Causing: javax.servlet.ServletException: com.sun.jersey.spi.container.servlet.ServletContainer-62cf484e@668580be==com.sun.jersey.spi.container.servlet.ServletContainer,1,false
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:561) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:349) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:812) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:288) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:732) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:92) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.RequestLogHandler.doStart(RequestLogHandler.java:131) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:233) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.start(Server.java:342) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.doStart(Server.java:290) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.Cli.run(Cli.java:70) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.Application.run(Application.java:72) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at ske.part.partsregister.infrastructure.PartsregisterApplication.main(PartsregisterApplication.java:24) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+WARN  [2014-08-01 11:30:23,915] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED org.eclipse.jetty.server.handler.RequestLogHandler@37b8c66f: javax.servlet.ServletException: com.sun.jersey.spi.container.servlet.ServletContainer-62cf484e@668580be==com.sun.jersey.spi.container.servlet.ServletContainer,1,false
+! com.sun.jersey.spi.inject.Errors$ErrorMessagesException: null
+! at com.sun.jersey.spi.inject.Errors.processErrorMessages(Errors.java:170) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.inject.Errors.postProcess(Errors.java:136) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:199) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:790) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.initiate(ServletContainer.java:491) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:540) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! ... 36 common frames omitted
+! Causing: javax.servlet.ServletException: com.sun.jersey.spi.container.servlet.ServletContainer-62cf484e@668580be==com.sun.jersey.spi.container.servlet.ServletContainer,1,false
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:561) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:349) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:812) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:288) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:732) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:92) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.RequestLogHandler.doStart(RequestLogHandler.java:131) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:233) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.start(Server.java:342) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.doStart(Server.java:290) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.Cli.run(Cli.java:70) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.Application.run(Application.java:72) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at ske.part.partsregister.infrastructure.PartsregisterApplication.main(PartsregisterApplication.java:24) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+WARN  [2014-08-01 11:30:23,915] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED org.eclipse.jetty.server.handler.StatisticsHandler@43ebbdfd: javax.servlet.ServletException: com.sun.jersey.spi.container.servlet.ServletContainer-62cf484e@668580be==com.sun.jersey.spi.container.servlet.ServletContainer,1,false
+! com.sun.jersey.spi.inject.Errors$ErrorMessagesException: null
+! at com.sun.jersey.spi.inject.Errors.processErrorMessages(Errors.java:170) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.inject.Errors.postProcess(Errors.java:136) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:199) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:790) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.initiate(ServletContainer.java:491) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:540) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! ... 36 common frames omitted
+! Causing: javax.servlet.ServletException: com.sun.jersey.spi.container.servlet.ServletContainer-62cf484e@668580be==com.sun.jersey.spi.container.servlet.ServletContainer,1,false
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:561) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:349) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:812) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:288) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:732) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:92) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.RequestLogHandler.doStart(RequestLogHandler.java:131) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:233) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.start(Server.java:342) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.doStart(Server.java:290) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.Cli.run(Cli.java:70) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.Application.run(Application.java:72) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at ske.part.partsregister.infrastructure.PartsregisterApplication.main(PartsregisterApplication.java:24) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+WARN  [2014-08-01 11:30:23,917] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED org.eclipse.jetty.server.Server@2a064fe1: javax.servlet.ServletException: com.sun.jersey.spi.container.servlet.ServletContainer-62cf484e@668580be==com.sun.jersey.spi.container.servlet.ServletContainer,1,false
+! com.sun.jersey.spi.inject.Errors$ErrorMessagesException: null
+! at com.sun.jersey.spi.inject.Errors.processErrorMessages(Errors.java:170) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.inject.Errors.postProcess(Errors.java:136) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:199) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:790) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.initiate(ServletContainer.java:491) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:540) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! ... 36 common frames omitted
+! Causing: javax.servlet.ServletException: com.sun.jersey.spi.container.servlet.ServletContainer-62cf484e@668580be==com.sun.jersey.spi.container.servlet.ServletContainer,1,false
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:561) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:349) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:812) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:288) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:732) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:92) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.RequestLogHandler.doStart(RequestLogHandler.java:131) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:233) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.start(Server.java:342) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.doStart(Server.java:290) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.Cli.run(Cli.java:70) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.Application.run(Application.java:72) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at ske.part.partsregister.infrastructure.PartsregisterApplication.main(PartsregisterApplication.java:24) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+ERROR [2014-08-01 11:30:23,918] io.dropwizard.cli.ServerCommand: Unable to start server, shutting down
+! com.sun.jersey.spi.inject.Errors$ErrorMessagesException: null
+! at com.sun.jersey.spi.inject.Errors.processErrorMessages(Errors.java:170) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.inject.Errors.postProcess(Errors.java:136) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:199) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:795) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:790) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.initiate(ServletContainer.java:491) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:321) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:605) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:207) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:376) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:559) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:540) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! ... 36 common frames omitted
+! Causing: javax.servlet.ServletException: com.sun.jersey.spi.container.servlet.ServletContainer-62cf484e@668580be==com.sun.jersey.spi.container.servlet.ServletContainer,1,false
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:561) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:349) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:812) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:288) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:732) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:92) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.RequestLogHandler.doStart(RequestLogHandler.java:131) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:233) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:118) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.start(Server.java:342) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:100) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:60) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.doStart(Server.java:290) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:69) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.Cli.run(Cli.java:70) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.Application.run(Application.java:72) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at ske.part.partsregister.infrastructure.PartsregisterApplication.main(PartsregisterApplication.java:24) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+INFO  [2014-08-01 11:32:32,086] io.dropwizard.server.ServerFactory: Starting Partsregister
+                       _                                    _ 
+   _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
+  / _ \ \ / / _ \ '_ \| __/ __|/ _ \| | | | '__/ __/ _ \/ _` |
+ |  __/\ V /  __/ | | | |_\__ \ (_) | |_| | | | (_|  __/ (_| |
+  \___| \_/ \___|_| |_|\__|___/\___/ \__,_|_|  \___\___|\__,_|
+
+INFO  [2014-08-01 11:32:32,452] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2014-08-01 11:32:32,600] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
+    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+
+INFO  [2014-08-01 11:32:33,202] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+ERROR [2014-08-01 11:34:46,599] io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper: Unable to deserialize the specific type
+! com.fasterxml.jackson.databind.JsonMappingException: No suitable constructor found for type [simple type, class ske.part.partsregister.application.OpprettPersonCommand]: can not instantiate from JSON object (need to add/enable type information?)
+!  at [Source: org.eclipse.jetty.server.HttpConnection$Input@690e47f6{HttpChannelOverHttp@28969d5c{r=1,a=DISPATCHED,uri=/part},HttpConnection@383517d5{FILLING},g=HttpGenerator{s=START},p=HttpParser{s=END,52 of 52}}; line: 1, column: 2]
+! at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:164) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1078) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.module.afterburner.deser.SuperSonicBeanDeserializer.deserializeFromObject(SuperSonicBeanDeserializer.java:189) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:124) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.module.afterburner.deser.SuperSonicBeanDeserializer.deserialize(SuperSonicBeanDeserializer.java:109) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.datatype.guava.deser.GuavaOptionalDeserializer.deserialize(GuavaOptionalDeserializer.java:96) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.datatype.guava.deser.GuavaOptionalDeserializer.deserialize(GuavaOptionalDeserializer.java:18) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.ObjectReader._bind(ObjectReader.java:1233) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:677) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.jaxrs.base.ProviderBase.readFrom(ProviderBase.java:777) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.jackson.JacksonMessageBodyProvider.readFrom(JacksonMessageBodyProvider.java:60) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.ContainerRequest.getEntity(ContainerRequest.java:490) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.EntityParamDispatchProvider$EntityInjectable.getValue(EntityParamDispatchProvider.java:123) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.inject.InjectableValuesProvider.getInjectableValues(InjectableValuesProvider.java:86) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$EntityParamInInvoker.getParams(AbstractResourceMethodDispatchProvider.java:153) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$VoidOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:166) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher.dispatch(InstrumentedResourceMethodDispatchProvider.java:30) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter$OptionalRequestDispatcher.dispatch(OptionalResourceMethodDispatchAdapter.java:37) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.ResourceObjectRule.accept(ResourceObjectRule.java:100) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:540) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:715) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:49) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1515) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:83) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:295) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.BiDiGzipFilter.doFilter(BiDiGzipFilter.java:127) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:44) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:39) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:519) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1097) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:448) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1031) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:175) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:51) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:92) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:162) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.handle(Server.java:446) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:271) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:246) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at java.lang.Thread.run(Thread.java:745) [na:1.7.0_60]
+INFO  [2014-08-01 11:37:04,895] io.dropwizard.server.ServerFactory: Starting Partsregister
+                       _                                    _ 
+   _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
+  / _ \ \ / / _ \ '_ \| __/ __|/ _ \| | | | '__/ __/ _ \/ _` |
+ |  __/\ V /  __/ | | | |_\__ \ (_) | |_| | | | (_|  __/ (_| |
+  \___| \_/ \___|_| |_|\__|___/\___/ \__,_|_|  \___\___|\__,_|
+
+INFO  [2014-08-01 11:37:05,250] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2014-08-01 11:37:05,441] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
+    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+
+INFO  [2014-08-01 11:37:06,067] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+ERROR [2014-08-01 11:37:16,524] io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper: Unable to deserialize the specific type
+! com.fasterxml.jackson.databind.JsonMappingException: No suitable constructor found for type [simple type, class ske.part.partsregister.application.OpprettPersonCommand]: can not instantiate from JSON object (need to add/enable type information?)
+!  at [Source: org.eclipse.jetty.server.HttpConnection$Input@522e0823{HttpChannelOverHttp@4c185bfb{r=2,a=DISPATCHED,uri=/part},HttpConnection@533ee2c4{FILLING},g=HttpGenerator{s=START},p=HttpParser{s=END,54 of 54}}; line: 1, column: 2]
+! at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:164) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1078) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.module.afterburner.deser.SuperSonicBeanDeserializer.deserializeFromObject(SuperSonicBeanDeserializer.java:189) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:124) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.module.afterburner.deser.SuperSonicBeanDeserializer.deserialize(SuperSonicBeanDeserializer.java:109) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.datatype.guava.deser.GuavaOptionalDeserializer.deserialize(GuavaOptionalDeserializer.java:96) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.datatype.guava.deser.GuavaOptionalDeserializer.deserialize(GuavaOptionalDeserializer.java:18) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.ObjectReader._bind(ObjectReader.java:1233) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:677) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.jaxrs.base.ProviderBase.readFrom(ProviderBase.java:777) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.jackson.JacksonMessageBodyProvider.readFrom(JacksonMessageBodyProvider.java:60) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.ContainerRequest.getEntity(ContainerRequest.java:490) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.EntityParamDispatchProvider$EntityInjectable.getValue(EntityParamDispatchProvider.java:123) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.inject.InjectableValuesProvider.getInjectableValues(InjectableValuesProvider.java:86) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$EntityParamInInvoker.getParams(AbstractResourceMethodDispatchProvider.java:153) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$VoidOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:166) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher.dispatch(InstrumentedResourceMethodDispatchProvider.java:30) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter$OptionalRequestDispatcher.dispatch(OptionalResourceMethodDispatchAdapter.java:37) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.ResourceObjectRule.accept(ResourceObjectRule.java:100) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:540) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:715) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:49) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1515) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:83) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:295) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.BiDiGzipFilter.doFilter(BiDiGzipFilter.java:127) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:44) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:39) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:519) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1097) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:448) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1031) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:175) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:51) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:92) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:162) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.handle(Server.java:446) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:271) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:246) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at java.lang.Thread.run(Thread.java:745) [na:1.7.0_60]
+INFO  [2014-08-01 11:39:35,976] io.dropwizard.server.ServerFactory: Starting Partsregister
+                       _                                    _ 
+   _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
+  / _ \ \ / / _ \ '_ \| __/ __|/ _ \| | | | '__/ __/ _ \/ _` |
+ |  __/\ V /  __/ | | | |_\__ \ (_) | |_| | | | (_|  __/ (_| |
+  \___| \_/ \___|_| |_|\__|___/\___/ \__,_|_|  \___\___|\__,_|
+
+INFO  [2014-08-01 11:39:36,332] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2014-08-01 11:39:36,497] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
+    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+
+INFO  [2014-08-01 11:39:37,099] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+ERROR [2014-08-01 11:39:43,200] io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper: Unable to deserialize the specific type
+! com.fasterxml.jackson.databind.JsonMappingException: No suitable constructor found for type [simple type, class ske.part.partsregister.application.OpprettPersonCommand]: can not instantiate from JSON object (need to add/enable type information?)
+!  at [Source: org.eclipse.jetty.server.HttpConnection$Input@79521e90{HttpChannelOverHttp@534afbb0{r=1,a=DISPATCHED,uri=/part},HttpConnection@5fd20a88{FILLING},g=HttpGenerator{s=START},p=HttpParser{s=END,54 of 54}}; line: 1, column: 2]
+! at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:164) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1078) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.module.afterburner.deser.SuperSonicBeanDeserializer.deserializeFromObject(SuperSonicBeanDeserializer.java:189) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:124) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.module.afterburner.deser.SuperSonicBeanDeserializer.deserialize(SuperSonicBeanDeserializer.java:109) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.ObjectReader._bind(ObjectReader.java:1233) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:677) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.jaxrs.base.ProviderBase.readFrom(ProviderBase.java:777) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.jackson.JacksonMessageBodyProvider.readFrom(JacksonMessageBodyProvider.java:60) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.ContainerRequest.getEntity(ContainerRequest.java:490) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.EntityParamDispatchProvider$EntityInjectable.getValue(EntityParamDispatchProvider.java:123) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.inject.InjectableValuesProvider.getInjectableValues(InjectableValuesProvider.java:86) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$EntityParamInInvoker.getParams(AbstractResourceMethodDispatchProvider.java:153) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$VoidOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:166) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher.dispatch(InstrumentedResourceMethodDispatchProvider.java:30) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter$OptionalRequestDispatcher.dispatch(OptionalResourceMethodDispatchAdapter.java:37) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.ResourceObjectRule.accept(ResourceObjectRule.java:100) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:540) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:715) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:49) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1515) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:83) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:295) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.BiDiGzipFilter.doFilter(BiDiGzipFilter.java:127) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:44) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:39) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:519) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1097) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:448) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1031) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:175) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:51) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:92) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:162) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.handle(Server.java:446) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:271) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:246) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at java.lang.Thread.run(Thread.java:745) [na:1.7.0_60]
+ERROR [2014-08-01 11:42:06,127] io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper: Unable to deserialize the specific type
+! com.fasterxml.jackson.databind.JsonMappingException: No suitable constructor found for type [simple type, class ske.part.partsregister.application.OpprettPersonCommand]: can not instantiate from JSON object (need to add/enable type information?)
+!  at [Source: org.eclipse.jetty.server.HttpConnection$Input@1e4877ec{HttpChannelOverHttp@27b9367c{r=1,a=DISPATCHED,uri=/part},HttpConnection@70a81b43{FILLING},g=HttpGenerator{s=START},p=HttpParser{s=END,55 of 55}}; line: 1, column: 2]
+! at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:164) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1078) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.module.afterburner.deser.SuperSonicBeanDeserializer.deserializeFromObject(SuperSonicBeanDeserializer.java:189) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:124) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.module.afterburner.deser.SuperSonicBeanDeserializer.deserialize(SuperSonicBeanDeserializer.java:109) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.ObjectReader._bind(ObjectReader.java:1233) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:677) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.jaxrs.base.ProviderBase.readFrom(ProviderBase.java:777) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.jackson.JacksonMessageBodyProvider.readFrom(JacksonMessageBodyProvider.java:60) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.ContainerRequest.getEntity(ContainerRequest.java:490) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.EntityParamDispatchProvider$EntityInjectable.getValue(EntityParamDispatchProvider.java:123) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.inject.InjectableValuesProvider.getInjectableValues(InjectableValuesProvider.java:86) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$EntityParamInInvoker.getParams(AbstractResourceMethodDispatchProvider.java:153) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$VoidOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:166) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher.dispatch(InstrumentedResourceMethodDispatchProvider.java:30) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter$OptionalRequestDispatcher.dispatch(OptionalResourceMethodDispatchAdapter.java:37) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.ResourceObjectRule.accept(ResourceObjectRule.java:100) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:540) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:715) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:49) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1515) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:83) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:295) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.BiDiGzipFilter.doFilter(BiDiGzipFilter.java:127) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:44) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:39) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:519) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1097) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:448) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1031) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:175) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:51) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:92) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:162) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.handle(Server.java:446) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:271) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:246) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at java.lang.Thread.run(Thread.java:745) [na:1.7.0_60]
+ERROR [2014-08-01 11:42:29,331] io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper: Unable to deserialize the specific type
+! com.fasterxml.jackson.databind.JsonMappingException: No suitable constructor found for type [simple type, class ske.part.partsregister.application.OpprettPersonCommand]: can not instantiate from JSON object (need to add/enable type information?)
+!  at [Source: org.eclipse.jetty.server.HttpConnection$Input@1e4877ec{HttpChannelOverHttp@27b9367c{r=2,a=DISPATCHED,uri=/part},HttpConnection@70a81b43{FILLING},g=HttpGenerator{s=START},p=HttpParser{s=END,55 of 55}}; line: 1, column: 2]
+! at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:164) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1078) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.module.afterburner.deser.SuperSonicBeanDeserializer.deserializeFromObject(SuperSonicBeanDeserializer.java:189) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:124) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.module.afterburner.deser.SuperSonicBeanDeserializer.deserialize(SuperSonicBeanDeserializer.java:109) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.ObjectReader._bind(ObjectReader.java:1233) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:677) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.jaxrs.base.ProviderBase.readFrom(ProviderBase.java:777) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.jackson.JacksonMessageBodyProvider.readFrom(JacksonMessageBodyProvider.java:60) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.ContainerRequest.getEntity(ContainerRequest.java:490) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.EntityParamDispatchProvider$EntityInjectable.getValue(EntityParamDispatchProvider.java:123) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.inject.InjectableValuesProvider.getInjectableValues(InjectableValuesProvider.java:86) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$EntityParamInInvoker.getParams(AbstractResourceMethodDispatchProvider.java:153) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$VoidOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:166) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher.dispatch(InstrumentedResourceMethodDispatchProvider.java:30) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter$OptionalRequestDispatcher.dispatch(OptionalResourceMethodDispatchAdapter.java:37) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.ResourceObjectRule.accept(ResourceObjectRule.java:100) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:540) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:715) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:49) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1515) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:83) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:295) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.BiDiGzipFilter.doFilter(BiDiGzipFilter.java:127) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:44) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:39) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:519) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1097) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:448) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1031) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:175) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:51) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:92) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:162) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.handle(Server.java:446) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:271) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:246) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at java.lang.Thread.run(Thread.java:745) [na:1.7.0_60]
+ERROR [2014-08-01 11:42:40,861] io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper: Unable to deserialize the specific type
+! com.fasterxml.jackson.databind.JsonMappingException: No suitable constructor found for type [simple type, class ske.part.partsregister.application.OpprettPersonCommand]: can not instantiate from JSON object (need to add/enable type information?)
+!  at [Source: org.eclipse.jetty.server.HttpConnection$Input@1e4877ec{HttpChannelOverHttp@27b9367c{r=3,a=DISPATCHED,uri=/part},HttpConnection@70a81b43{FILLING},g=HttpGenerator{s=START},p=HttpParser{s=END,55 of 55}}; line: 1, column: 2]
+! at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:164) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1078) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.module.afterburner.deser.SuperSonicBeanDeserializer.deserializeFromObject(SuperSonicBeanDeserializer.java:189) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:124) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.module.afterburner.deser.SuperSonicBeanDeserializer.deserialize(SuperSonicBeanDeserializer.java:109) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.ObjectReader._bind(ObjectReader.java:1233) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:677) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.fasterxml.jackson.jaxrs.base.ProviderBase.readFrom(ProviderBase.java:777) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.jackson.JacksonMessageBodyProvider.readFrom(JacksonMessageBodyProvider.java:60) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.ContainerRequest.getEntity(ContainerRequest.java:490) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.EntityParamDispatchProvider$EntityInjectable.getValue(EntityParamDispatchProvider.java:123) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.inject.InjectableValuesProvider.getInjectableValues(InjectableValuesProvider.java:86) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$EntityParamInInvoker.getParams(AbstractResourceMethodDispatchProvider.java:153) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$VoidOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:166) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher.dispatch(InstrumentedResourceMethodDispatchProvider.java:30) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter$OptionalRequestDispatcher.dispatch(OptionalResourceMethodDispatchAdapter.java:37) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.ResourceObjectRule.accept(ResourceObjectRule.java:100) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:540) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:715) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:49) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1515) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:83) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:295) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.BiDiGzipFilter.doFilter(BiDiGzipFilter.java:127) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:44) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:39) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:519) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1097) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:448) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1031) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:175) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:51) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:92) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:162) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.handle(Server.java:446) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:271) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:246) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at java.lang.Thread.run(Thread.java:745) [na:1.7.0_60]
+INFO  [2014-08-01 11:50:15,377] io.dropwizard.server.ServerFactory: Starting Partsregister
+                       _                                    _ 
+   _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
+  / _ \ \ / / _ \ '_ \| __/ __|/ _ \| | | | '__/ __/ _ \/ _` |
+ |  __/\ V /  __/ | | | |_\__ \ (_) | |_| | | | (_|  __/ (_| |
+  \___| \_/ \___|_| |_|\__|___/\___/ \__,_|_|  \___\___|\__,_|
+
+INFO  [2014-08-01 11:50:15,682] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2014-08-01 11:50:15,798] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
+    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+
+INFO  [2014-08-01 11:50:16,298] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+ERROR [2014-08-01 11:50:31,804] com.sun.jersey.spi.container.ContainerResponse: A message body writer for Java class io.dropwizard.jersey.errors.ErrorMessage, and Java type class io.dropwizard.jersey.errors.ErrorMessage, and MIME media type application/octet-stream was not found.
+The registered message body writers compatible with the MIME media type are:
+*/* ->
+  com.sun.jersey.core.impl.provider.entity.FormProvider
+  com.sun.jersey.core.impl.provider.entity.StringProvider
+  com.sun.jersey.core.impl.provider.entity.ByteArrayProvider
+  com.sun.jersey.core.impl.provider.entity.FileProvider
+  com.sun.jersey.core.impl.provider.entity.InputStreamProvider
+  com.sun.jersey.core.impl.provider.entity.DataSourceProvider
+  com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.ReaderProvider
+  com.sun.jersey.core.impl.provider.entity.DocumentProvider
+  com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider
+  com.sun.jersey.core.impl.provider.entity.SourceProvider$SourceWriter
+  com.sun.jersey.server.impl.template.ViewableMessageBodyWriter
+  com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General
+  com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider
+application/octet-stream ->
+  com.sun.jersey.core.impl.provider.entity.ByteArrayProvider
+  com.sun.jersey.core.impl.provider.entity.FileProvider
+  com.sun.jersey.core.impl.provider.entity.InputStreamProvider
+  com.sun.jersey.core.impl.provider.entity.DataSourceProvider
+  com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider
+
+INFO  [2014-08-01 11:54:44,757] io.dropwizard.server.ServerFactory: Starting Partsregister
+                       _                                    _ 
+   _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
+  / _ \ \ / / _ \ '_ \| __/ __|/ _ \| | | | '__/ __/ _ \/ _` |
+ |  __/\ V /  __/ | | | |_\__ \ (_) | |_| | | | (_|  __/ (_| |
+  \___| \_/ \___|_| |_|\__|___/\___/ \__,_|_|  \___\___|\__,_|
+
+INFO  [2014-08-01 11:54:45,033] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2014-08-01 11:54:45,166] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
+    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+
+INFO  [2014-08-01 11:54:45,723] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2014-08-01 12:03:29,421] io.dropwizard.server.ServerFactory: Starting Partsregister
+                       _                                    _ 
+   _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
+  / _ \ \ / / _ \ '_ \| __/ __|/ _ \| | | | '__/ __/ _ \/ _` |
+ |  __/\ V /  __/ | | | |_\__ \ (_) | |_| | | | (_|  __/ (_| |
+  \___| \_/ \___|_| |_|\__|___/\___/ \__,_|_|  \___\___|\__,_|
+
+INFO  [2014-08-01 12:03:29,754] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2014-08-01 12:03:29,887] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
+    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+
+INFO  [2014-08-01 12:03:30,390] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2014-08-01 12:10:03,425] io.dropwizard.server.ServerFactory: Starting Partsregister
+                       _                                    _ 
+   _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
+  / _ \ \ / / _ \ '_ \| __/ __|/ _ \| | | | '__/ __/ _ \/ _` |
+ |  __/\ V /  __/ | | | |_\__ \ (_) | |_| | | | (_|  __/ (_| |
+  \___| \_/ \___|_| |_|\__|___/\___/ \__,_|_|  \___\___|\__,_|
+
+INFO  [2014-08-01 12:10:03,756] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2014-08-01 12:10:03,911] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
+    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
+    GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
+
+INFO  [2014-08-01 12:10:04,447] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+ERROR [2014-08-01 12:10:09,002] io.dropwizard.jersey.errors.LoggingExceptionMapper: Error handling a request: 54858a45a2871556
+! java.lang.NullPointerException: null
+! at ske.part.partsregister.interfaces.PartViewStore.hentPart(PartViewStore.java:18) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at ske.part.partsregister.interfaces.PartViewResource.hentPartMedId(PartViewResource.java:37) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_60]
+! at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_60]
+! at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_60]
+! at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_60]
+! at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$TypeOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:185) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher.dispatch(InstrumentedResourceMethodDispatchProvider.java:30) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter$OptionalRequestDispatcher.dispatch(OptionalResourceMethodDispatchAdapter.java:37) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.ResourceObjectRule.accept(ResourceObjectRule.java:100) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:540) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:715) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:49) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1515) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlets.UserAgentFilter.doFilter(UserAgentFilter.java:83) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlets.GzipFilter.doFilter(GzipFilter.java:348) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.BiDiGzipFilter.doFilter(BiDiGzipFilter.java:127) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:44) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:39) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1486) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:519) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1097) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:448) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1031) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:175) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:51) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:92) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:162) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.Server.handle(Server.java:446) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:271) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:246) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at java.lang.Thread.run(Thread.java:745) [na:1.7.0_60]
+INFO  [2014-08-01 12:38:18,940] io.dropwizard.server.ServerFactory: Starting Partsregister
+                       _                                    _ 
+   _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
+  / _ \ \ / / _ \ '_ \| __/ __|/ _ \| | | | '__/ __/ _ \/ _` |
+ |  __/\ V /  __/ | | | |_\__ \ (_) | |_| | | | (_|  __/ (_| |
+  \___| \_/ \___|_| |_|\__|___/\___/ \__,_|_|  \___\___|\__,_|
+
+INFO  [2014-08-01 12:38:19,247] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2014-08-01 12:38:19,376] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
+    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
+    GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
+
+INFO  [2014-08-01 12:38:19,910] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2014-08-01 13:24:40,786] io.dropwizard.server.ServerFactory: Starting Partsregister
+                       _                                    _ 
+   _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
+  / _ \ \ / / _ \ '_ \| __/ __|/ _ \| | | | '__/ __/ _ \/ _` |
+ |  __/\ V /  __/ | | | |_\__ \ (_) | |_| | | | (_|  __/ (_| |
+  \___| \_/ \___|_| |_|\__|___/\___/ \__,_|_|  \___\___|\__,_|
+
+INFO  [2014-08-01 13:24:41,073] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2014-08-01 13:24:41,180] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
+    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
+    GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
+
+INFO  [2014-08-01 13:24:41,714] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2014-08-01 13:28:35,620] io.dropwizard.server.ServerFactory: Starting Partsregister
+                       _                                    _ 
+   _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
+  / _ \ \ / / _ \ '_ \| __/ __|/ _ \| | | | '__/ __/ _ \/ _` |
+ |  __/\ V /  __/ | | | |_\__ \ (_) | |_| | | | (_|  __/ (_| |
+  \___| \_/ \___|_| |_|\__|___/\___/ \__,_|_|  \___\___|\__,_|
+
+WARN  [2014-08-01 13:28:35,733] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED org.eclipse.jetty.server.Server@4eb15265: java.lang.RuntimeException: java.net.BindException: Address already in use
+! java.net.BindException: Address already in use
+! at sun.nio.ch.Net.bind0(Native Method) ~[na:1.7.0_60]
+! at sun.nio.ch.Net.bind(Net.java:444) ~[na:1.7.0_60]
+! at sun.nio.ch.Net.bind(Net.java:436) ~[na:1.7.0_60]
+! at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) ~[na:1.7.0_60]
+! at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.7.0_60]
+! at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:264) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:200) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! ... 8 common frames omitted
+! Causing: java.lang.RuntimeException: java.net.BindException: Address already in use
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:213) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.setStarting(AbstractLifeCycle.java:187) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.Cli.run(Cli.java:70) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.Application.run(Application.java:72) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at ske.part.partsregister.infrastructure.PartsregisterApplication.main(PartsregisterApplication.java:25) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+ERROR [2014-08-01 13:28:35,734] io.dropwizard.cli.ServerCommand: Unable to start server, shutting down
+! java.net.BindException: Address already in use
+! at sun.nio.ch.Net.bind0(Native Method) ~[na:1.7.0_60]
+! at sun.nio.ch.Net.bind(Net.java:444) ~[na:1.7.0_60]
+! at sun.nio.ch.Net.bind(Net.java:436) ~[na:1.7.0_60]
+! at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) ~[na:1.7.0_60]
+! at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.7.0_60]
+! at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:264) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:200) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! ... 8 common frames omitted
+! Causing: java.lang.RuntimeException: java.net.BindException: Address already in use
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:213) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.setStarting(AbstractLifeCycle.java:187) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:43) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:76) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.cli.Cli.run(Cli.java:70) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at io.dropwizard.Application.run(Application.java:72) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+! at ske.part.partsregister.infrastructure.PartsregisterApplication.main(PartsregisterApplication.java:25) [partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+INFO  [2014-08-01 13:29:41,430] io.dropwizard.server.ServerFactory: Starting Partsregister
+                       _                                    _ 
+   _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
+  / _ \ \ / / _ \ '_ \| __/ __|/ _ \| | | | '__/ __/ _ \/ _` |
+ |  __/\ V /  __/ | | | |_\__ \ (_) | |_| | | | (_|  __/ (_| |
+  \___| \_/ \___|_| |_|\__|___/\___/ \__,_|_|  \___\___|\__,_|
+
+INFO  [2014-08-01 13:29:41,704] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2014-08-01 13:29:41,823] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
+    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
+    GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
+
+INFO  [2014-08-01 13:29:42,320] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2014-08-01 13:30:02,912] io.dropwizard.server.ServerFactory: Starting Partsregister
+                       _                                    _ 
+   _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
+  / _ \ \ / / _ \ '_ \| __/ __|/ _ \| | | | '__/ __/ _ \/ _` |
+ |  __/\ V /  __/ | | | |_\__ \ (_) | |_| | | | (_|  __/ (_| |
+  \___| \_/ \___|_| |_|\__|___/\___/ \__,_|_|  \___\___|\__,_|
+
+INFO  [2014-08-01 13:30:03,227] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2014-08-01 13:30:03,336] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
+    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
+    GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
+
+INFO  [2014-08-01 13:30:03,805] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2014-08-01 13:31:08,016] io.dropwizard.server.ServerFactory: Starting Partsregister
+                       _                                    _ 
+   _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
+  / _ \ \ / / _ \ '_ \| __/ __|/ _ \| | | | '__/ __/ _ \/ _` |
+ |  __/\ V /  __/ | | | |_\__ \ (_) | |_| | | | (_|  __/ (_| |
+  \___| \_/ \___|_| |_|\__|___/\___/ \__,_|_|  \___\___|\__,_|
+
+INFO  [2014-08-01 13:31:08,328] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2014-08-01 13:31:08,446] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
+    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
+    GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
+
+INFO  [2014-08-01 13:31:08,978] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2014-08-01 13:45:56,722] io.dropwizard.server.ServerFactory: Starting Partsregister
+                       _                                    _ 
+   _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
+  / _ \ \ / / _ \ '_ \| __/ __|/ _ \| | | | '__/ __/ _ \/ _` |
+ |  __/\ V /  __/ | | | |_\__ \ (_) | |_| | | | (_|  __/ (_| |
+  \___| \_/ \___|_| |_|\__|___/\___/ \__,_|_|  \___\___|\__,_|
+
+INFO  [2014-08-01 13:45:56,988] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2014-08-01 13:45:57,112] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
+    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
+    GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
+
+INFO  [2014-08-01 13:45:57,648] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
