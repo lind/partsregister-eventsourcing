@@ -15,8 +15,8 @@ public class PartEventHandler {
     }
 
     @Subscribe
-    public void recordPersonOpprettetEvent(PersonOpprettetEvent event) {
-        logger.debug("recordPersonOpprettetEvent - Fornavn: {}", event.getFornavn());
+    public void handlePersonOpprettetEvent(PersonOpprettetEvent event) {
+        logger.debug("handlePersonOpprettetEvent - Fornavn: {}", event.getFornavn());
         viewStore.opprettPart(new PartViewModel(event.getEventSourceIdentifier().asString(), event.getFornavn(), event.getEtternavn()));
     }
 }

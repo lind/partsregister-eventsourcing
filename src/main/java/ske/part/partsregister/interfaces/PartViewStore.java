@@ -1,10 +1,10 @@
 package ske.part.partsregister.interfaces;
 
-import static com.google.common.collect.Maps.newHashMap;
+import com.google.common.base.Optional;
 
 import java.util.Map;
 
-import com.google.common.base.Optional;
+import static com.google.common.collect.Maps.newHashMap;
 
 public class PartViewStore {
 
@@ -15,7 +15,7 @@ public class PartViewStore {
         PartViewModel partViewModel = partViewStore.get(partId);
 
         return (null != partViewModel ? Optional.of(new PartDTO(partViewModel.getId(), partViewModel.getFornavn(), partViewModel.getEtternavn())) :
-                Optional.<PartDTO> absent());
+                Optional.<PartDTO>absent());
     }
 
     public void opprettPart(PartViewModel part) {

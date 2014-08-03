@@ -1,8 +1,8 @@
 package ske.eventsourcing.eventstore;
 
-import java.util.List;
-
 import ske.eventsourcing.event.Event;
+
+import java.util.List;
 
 /**
  * Kilde til event (hendelser). Hver event source har sin egen rekke med event som er lagret i event store. Eventene
@@ -10,18 +10,18 @@ import ske.eventsourcing.event.Event;
  */
 public interface EventSource {
 
-	/**
-	 * Bygger opp staten utefra eventene til event sourcen.
-	 * 
-	 * @param events alle event
-	 */
-	void load(Iterable<? extends Event> events);
+    /**
+     * Bygger opp staten utefra eventene til event sourcen.
+     *
+     * @param events alle event
+     */
+    void load(Iterable<? extends Event> events);
 
-	List<Event> getUnsavedEvents();
+    List<Event> getUnsavedEvents();
 
-	// TODO: interface for id to use UUID and other identifiers.
-	EventSourceIdentifier getEventSourceIdentifier();
+    // TODO: interface for id to use UUID and other identifiers.
+    EventSourceIdentifier getEventSourceIdentifier();
 
-	void clearUnsavedEvents();
+    void clearUnsavedEvents();
 
 }

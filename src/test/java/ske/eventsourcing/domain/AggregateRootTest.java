@@ -1,14 +1,14 @@
 package ske.eventsourcing.domain;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
+import org.junit.Test;
+import ske.eventsourcing.event.DomainEvent;
+import ske.eventsourcing.eventstore.StringEventSourceIdentifier;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Test;
-import ske.eventsourcing.event.DomainEvent;
-import ske.eventsourcing.eventstore.StringEventSourceIdentifier;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
 
 public class AggregateRootTest {
 

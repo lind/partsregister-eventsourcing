@@ -1,14 +1,16 @@
 package ske.part.partsregister.infrastructure;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.dropwizard.Configuration;
-import org.hibernate.validator.constraints.NotEmpty;
+//import io.dropwizard.Configuration;
+//import org.hibernate.validator.constraints.NotEmpty;
 
-public class PartsregisterConfiguration extends Configuration {
-    @NotEmpty
+// Brukes med Dropwizard
+
+public class PartsregisterConfiguration { //extends Configuration {
+    //    @NotEmpty
     private String template;
 
-    @NotEmpty
+    //    @NotEmpty
     private String defaultName = "Stranger";
 
     @JsonProperty

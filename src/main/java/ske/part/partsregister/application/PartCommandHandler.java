@@ -1,7 +1,5 @@
 package ske.part.partsregister.application;
 
-import java.util.List;
-
 import com.google.common.base.Optional;
 import com.google.common.eventbus.EventBus;
 import org.slf4j.Logger;
@@ -10,6 +8,8 @@ import ske.eventsourcing.event.Event;
 import ske.eventsourcing.eventstore.EventSourceIdentifier;
 import ske.eventsourcing.eventstore.EventStore;
 import ske.part.partsregister.domain.part.Part;
+
+import java.util.List;
 
 public class PartCommandHandler {
 

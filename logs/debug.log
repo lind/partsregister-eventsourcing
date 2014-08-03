@@ -134,12 +134,12 @@ DEBUG [2014-08-01 11:19:19,697] org.eclipse.jetty.util.component.AbstractLifeCyc
 DEBUG [2014-08-01 11:19:19,697] org.eclipse.jetty.util.component.AbstractLifeCycle: STARTED com.sun.jersey.spi.container.servlet.ServletContainer-7c2b212d@9aa12d57==com.sun.jersey.spi.container.servlet.ServletContainer,1,true
 DEBUG [2014-08-01 11:19:19,698] org.eclipse.jetty.servlet.ServletHolder: Filter.init com.sun.jersey.spi.container.servlet.ServletContainer@a40d17e
 INFO  [2014-08-01 11:19:19,848] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
-DEBUG [2014-08-01 11:19:19,931] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.infrastructure.PartResource]
+DEBUG [2014-08-01 11:19:19,931] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.interfaces.rest.PartResource]
 DEBUG [2014-08-01 11:19:19,932] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalQueryParamInjectableProvider, io.dropwizard.jersey.validation.ConstraintViolationExceptionMapper, io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper, com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchAdapter, io.dropwizard.errors.EarlyEofExceptionMapper]
 INFO  [2014-08-01 11:19:19,968] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
 
 INFO  [2014-08-01 11:19:20,474] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@38ba271{/,null,AVAILABLE}
 DEBUG [2014-08-01 11:19:20,474] org.eclipse.jetty.util.component.AbstractLifeCycle: STARTED i.d.j.MutableServletContextHandler@38ba271{/,null,AVAILABLE}
@@ -358,7 +358,7 @@ DEBUG [2014-08-01 11:21:04,600] org.eclipse.jetty.servlet.ServletHandler: call f
 DEBUG [2014-08-01 11:21:04,601] org.eclipse.jetty.servlet.ServletHandler: call filter io.dropwizard.jetty.BiDiGzipFilter-51bc60f2
 DEBUG [2014-08-01 11:21:04,602] org.eclipse.jetty.servlet.ServletHandler: call servlet com.sun.jersey.spi.container.servlet.ServletContainer-7c2b212d@9aa12d57==com.sun.jersey.spi.container.servlet.ServletContainer,1,true
 DEBUG [2014-08-01 11:21:04,645] org.eclipse.jetty.server.HttpInput: org.eclipse.jetty.server.HttpConnection$Input@f3e8ffa{HttpChannelOverHttp@2849f430{r=1,a=DISPATCHED,uri=/part},HttpConnection@2b031ae9{FILLING},g=HttpGenerator{s=START},p=HttpParser{s=END,9 of 9}} consumed java.nio.HeapByteBufferR[pos=505 lim=505 cap=8192]
-DEBUG [2014-08-01 11:21:04,645] ske.part.partsregister.infrastructure.PartResource: /part.hentPart() - partId: {"id", 3}
+DEBUG [2014-08-01 11:21:04,645] ske.part.partsregister.interfaces.rest.PartResource: /part.hentPart() - partId: {"id", 3}
 DEBUG [2014-08-01 11:21:04,659] org.eclipse.jetty.server.Server: RESPONSE /part  204 handled=true
 DEBUG [2014-08-01 11:21:04,663] org.eclipse.jetty.server.HttpConnection: org.eclipse.jetty.server.HttpConnection$CommitCallback@8326160 generate: NEED_HEADER (null,[p=0,l=0,c=0,r=0],true)@START
 DEBUG [2014-08-01 11:21:04,666] org.eclipse.jetty.server.HttpConnection: org.eclipse.jetty.server.HttpConnection$CommitCallback@8326160 generate: FLUSH ([p=0,l=96,c=8192,r=96],[p=0,l=0,c=0,r=0],true)@COMPLETING
@@ -610,12 +610,12 @@ INFO  [2014-08-01 11:23:32,803] io.dropwizard.server.ServerFactory: Starting Par
 
 DEBUG [2014-08-01 11:23:32,928] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = []
 INFO  [2014-08-01 11:23:33,129] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
-DEBUG [2014-08-01 11:23:33,224] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.infrastructure.PartResource]
+DEBUG [2014-08-01 11:23:33,224] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.interfaces.rest.PartResource]
 DEBUG [2014-08-01 11:23:33,225] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalQueryParamInjectableProvider, io.dropwizard.jersey.validation.ConstraintViolationExceptionMapper, io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper, com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchAdapter, io.dropwizard.errors.EarlyEofExceptionMapper]
 INFO  [2014-08-01 11:23:33,267] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
 
 INFO  [2014-08-01 11:23:33,816] io.dropwizard.setup.AdminEnvironment: tasks = 
 
@@ -624,8 +624,8 @@ INFO  [2014-08-01 11:23:33,816] io.dropwizard.setup.AdminEnvironment: tasks =
 DEBUG [2014-08-01 11:23:33,817] io.dropwizard.setup.AdminEnvironment: health checks = [deadlocks, template]
 DEBUG [2014-08-01 11:24:00,702] ske.part.partsregister.infrastructure.HelloWorldResource: /hello-world.sayHello() - navn: mangler!
 DEBUG [2014-08-01 11:24:54,570] ske.part.partsregister.infrastructure.HelloWorldResource: /hello-world.sayHello() - navn: Successful Dropwizard User
-DEBUG [2014-08-01 11:25:04,745] ske.part.partsregister.infrastructure.PartResource: /part.hentPart() - partId: {"id", 3}
-DEBUG [2014-08-01 11:27:45,578] ske.part.partsregister.infrastructure.PartResource: /part.hentPart() - partId: {"id", "3"}
+DEBUG [2014-08-01 11:25:04,745] ske.part.partsregister.interfaces.rest.PartResource: /part.hentPart() - partId: {"id", 3}
+DEBUG [2014-08-01 11:27:45,578] ske.part.partsregister.interfaces.rest.PartResource: /part.hentPart() - partId: {"id", "3"}
 INFO  [2014-08-01 11:29:08,757] io.dropwizard.server.ServerFactory: Starting Partsregister
                        _                                    _ 
    _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
@@ -635,12 +635,12 @@ INFO  [2014-08-01 11:29:08,757] io.dropwizard.server.ServerFactory: Starting Par
 
 DEBUG [2014-08-01 11:29:08,881] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = []
 INFO  [2014-08-01 11:29:09,094] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
-DEBUG [2014-08-01 11:29:09,198] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.infrastructure.PartResource]
+DEBUG [2014-08-01 11:29:09,198] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.interfaces.rest.PartResource]
 DEBUG [2014-08-01 11:29:09,198] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalQueryParamInjectableProvider, io.dropwizard.jersey.validation.ConstraintViolationExceptionMapper, io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper, com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchAdapter, io.dropwizard.errors.EarlyEofExceptionMapper]
 INFO  [2014-08-01 11:29:09,249] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
 
 INFO  [2014-08-01 11:29:09,831] io.dropwizard.setup.AdminEnvironment: tasks = 
 
@@ -648,7 +648,7 @@ INFO  [2014-08-01 11:29:09,831] io.dropwizard.setup.AdminEnvironment: tasks =
 
 DEBUG [2014-08-01 11:29:09,832] io.dropwizard.setup.AdminEnvironment: health checks = [deadlocks, template]
 DEBUG [2014-08-01 11:29:25,521] ske.part.partsregister.infrastructure.HelloWorldResource: /hello-world.sayHello() - navn: Successful Dropwizard User
-DEBUG [2014-08-01 11:29:33,861] ske.part.partsregister.infrastructure.PartResource: /part.hentPart() - partId: {"id", "3"}
+DEBUG [2014-08-01 11:29:33,861] ske.part.partsregister.interfaces.rest.PartResource: /part.hentPart() - partId: {"id", "3"}
 INFO  [2014-08-01 11:30:22,810] io.dropwizard.server.ServerFactory: Starting Partsregister
                        _                                    _ 
    _____   _____ _ __ | |_ ___  ___  _   _ _ __ ___ ___  __| |
@@ -658,16 +658,16 @@ INFO  [2014-08-01 11:30:22,810] io.dropwizard.server.ServerFactory: Starting Par
 
 DEBUG [2014-08-01 11:30:22,930] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = []
 INFO  [2014-08-01 11:30:23,170] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
-DEBUG [2014-08-01 11:30:23,282] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.infrastructure.PartResource]
+DEBUG [2014-08-01 11:30:23,282] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.interfaces.rest.PartResource]
 DEBUG [2014-08-01 11:30:23,283] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalQueryParamInjectableProvider, io.dropwizard.jersey.validation.ConstraintViolationExceptionMapper, io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper, com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchAdapter, io.dropwizard.errors.EarlyEofExceptionMapper]
 INFO  [2014-08-01 11:30:23,325] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
 
 ERROR [2014-08-01 11:30:23,898] com.sun.jersey.spi.inject.Errors: The following errors and warnings have been detected with resource and/or provider classes:
-  SEVERE: Consuming media type conflict. The resource methods public void ske.part.partsregister.infrastructure.PartResource.opprettPart(com.google.common.base.Optional) and public void ske.part.partsregister.infrastructure.PartResource.opprettPart(java.lang.String) can consume the same media type
+  SEVERE: Consuming media type conflict. The resource methods public void ske.part.partsregister.interfaces.rest.PartResource.opprettPart(com.google.common.base.Optional) and public void ske.part.partsregister.interfaces.rest.PartResource.opprettPart(java.lang.String) can consume the same media type
 WARN  [2014-08-01 11:30:23,907] /: unavailable
 ! com.sun.jersey.spi.inject.Errors$ErrorMessagesException: null
 ! at com.sun.jersey.spi.inject.Errors.processErrorMessages(Errors.java:170) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
@@ -1106,13 +1106,13 @@ INFO  [2014-08-01 11:32:32,086] io.dropwizard.server.ServerFactory: Starting Par
 
 DEBUG [2014-08-01 11:32:32,216] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = []
 INFO  [2014-08-01 11:32:32,452] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
-DEBUG [2014-08-01 11:32:32,552] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.infrastructure.PartResource]
+DEBUG [2014-08-01 11:32:32,552] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.interfaces.rest.PartResource]
 DEBUG [2014-08-01 11:32:32,552] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalQueryParamInjectableProvider, io.dropwizard.jersey.validation.ConstraintViolationExceptionMapper, io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper, com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchAdapter, io.dropwizard.errors.EarlyEofExceptionMapper]
 INFO  [2014-08-01 11:32:32,600] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
 
 INFO  [2014-08-01 11:32:33,202] io.dropwizard.setup.AdminEnvironment: tasks = 
 
@@ -1120,7 +1120,7 @@ INFO  [2014-08-01 11:32:33,202] io.dropwizard.setup.AdminEnvironment: tasks =
 
 DEBUG [2014-08-01 11:32:33,203] io.dropwizard.setup.AdminEnvironment: health checks = [deadlocks, template]
 DEBUG [2014-08-01 11:32:42,605] ske.part.partsregister.infrastructure.HelloWorldResource: /hello-world.sayHello() - navn: Successful Dropwizard User
-DEBUG [2014-08-01 11:32:55,580] ske.part.partsregister.infrastructure.PartResource: /part.hentPart() - partId: {"id", "3"}
+DEBUG [2014-08-01 11:32:55,580] ske.part.partsregister.interfaces.rest.PartResource: /part.hentPart() - partId: {"id", "3"}
 ERROR [2014-08-01 11:34:46,599] io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper: Unable to deserialize the specific type
 ! com.fasterxml.jackson.databind.JsonMappingException: No suitable constructor found for type [simple type, class ske.part.partsregister.application.OpprettPersonCommand]: can not instantiate from JSON object (need to add/enable type information?)
 !  at [Source: org.eclipse.jetty.server.HttpConnection$Input@690e47f6{HttpChannelOverHttp@28969d5c{r=1,a=DISPATCHED,uri=/part},HttpConnection@383517d5{FILLING},g=HttpGenerator{s=START},p=HttpParser{s=END,52 of 52}}; line: 1, column: 2]
@@ -1195,13 +1195,13 @@ INFO  [2014-08-01 11:37:04,895] io.dropwizard.server.ServerFactory: Starting Par
 
 DEBUG [2014-08-01 11:37:05,031] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = []
 INFO  [2014-08-01 11:37:05,250] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
-DEBUG [2014-08-01 11:37:05,384] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.infrastructure.PartResource]
+DEBUG [2014-08-01 11:37:05,384] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.interfaces.rest.PartResource]
 DEBUG [2014-08-01 11:37:05,384] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalQueryParamInjectableProvider, io.dropwizard.jersey.validation.ConstraintViolationExceptionMapper, io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper, com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchAdapter, io.dropwizard.errors.EarlyEofExceptionMapper]
 INFO  [2014-08-01 11:37:05,441] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
 
 INFO  [2014-08-01 11:37:06,067] io.dropwizard.setup.AdminEnvironment: tasks = 
 
@@ -1283,13 +1283,13 @@ INFO  [2014-08-01 11:39:35,976] io.dropwizard.server.ServerFactory: Starting Par
 
 DEBUG [2014-08-01 11:39:36,126] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = []
 INFO  [2014-08-01 11:39:36,332] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
-DEBUG [2014-08-01 11:39:36,438] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.infrastructure.PartResource]
+DEBUG [2014-08-01 11:39:36,438] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.interfaces.rest.PartResource]
 DEBUG [2014-08-01 11:39:36,439] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalQueryParamInjectableProvider, io.dropwizard.jersey.validation.ConstraintViolationExceptionMapper, io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper, com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchAdapter, io.dropwizard.errors.EarlyEofExceptionMapper]
 INFO  [2014-08-01 11:39:36,497] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
 
 INFO  [2014-08-01 11:39:37,099] io.dropwizard.setup.AdminEnvironment: tasks = 
 
@@ -1557,13 +1557,13 @@ INFO  [2014-08-01 11:50:15,377] io.dropwizard.server.ServerFactory: Starting Par
 
 DEBUG [2014-08-01 11:50:15,502] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = []
 INFO  [2014-08-01 11:50:15,682] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
-DEBUG [2014-08-01 11:50:15,763] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.infrastructure.PartResource]
+DEBUG [2014-08-01 11:50:15,763] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.interfaces.rest.PartResource]
 DEBUG [2014-08-01 11:50:15,763] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalQueryParamInjectableProvider, io.dropwizard.jersey.validation.ConstraintViolationExceptionMapper, io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper, com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchAdapter, io.dropwizard.errors.EarlyEofExceptionMapper]
 INFO  [2014-08-01 11:50:15,798] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
 
 INFO  [2014-08-01 11:50:16,298] io.dropwizard.setup.AdminEnvironment: tasks = 
 
@@ -1674,20 +1674,20 @@ INFO  [2014-08-01 11:54:44,757] io.dropwizard.server.ServerFactory: Starting Par
 
 DEBUG [2014-08-01 11:54:44,869] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = []
 INFO  [2014-08-01 11:54:45,033] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
-DEBUG [2014-08-01 11:54:45,118] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.infrastructure.PartResource]
+DEBUG [2014-08-01 11:54:45,118] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.interfaces.rest.PartResource]
 DEBUG [2014-08-01 11:54:45,119] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalQueryParamInjectableProvider, io.dropwizard.jersey.validation.ConstraintViolationExceptionMapper, io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper, com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchAdapter, io.dropwizard.errors.EarlyEofExceptionMapper]
 INFO  [2014-08-01 11:54:45,166] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
 
 INFO  [2014-08-01 11:54:45,723] io.dropwizard.setup.AdminEnvironment: tasks = 
 
     POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
 
 DEBUG [2014-08-01 11:54:45,723] io.dropwizard.setup.AdminEnvironment: health checks = [deadlocks, template]
-DEBUG [2014-08-01 11:54:49,269] ske.part.partsregister.infrastructure.PartResource: /part.hentPart() - partId: ske.eventsourcing.eventstore.StringEventSourceIdentifier@7f0ecf33
+DEBUG [2014-08-01 11:54:49,269] ske.part.partsregister.interfaces.rest.PartResource: /part.hentPart() - partId: ske.eventsourcing.eventstore.StringEventSourceIdentifier@7f0ecf33
 DEBUG [2014-08-01 11:54:49,270] ske.part.partsregister.application.PartCommandHandler: handle(OpprettPersonCommand) - Fornavn: Kalle 
 DEBUG [2014-08-01 11:54:49,343] ske.part.partsregister.domain.part.Part: apply() - PersonOpprettetEvent{id=3}
 DEBUG [2014-08-01 11:54:49,343] ske.part.partsregister.domain.part.Part: handle event: PersonOpprettetEvent{id=3}
@@ -1703,20 +1703,20 @@ INFO  [2014-08-01 12:03:29,421] io.dropwizard.server.ServerFactory: Starting Par
 
 DEBUG [2014-08-01 12:03:29,543] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = []
 INFO  [2014-08-01 12:03:29,754] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
-DEBUG [2014-08-01 12:03:29,837] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.infrastructure.PartResource]
+DEBUG [2014-08-01 12:03:29,837] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.interfaces.rest.PartResource]
 DEBUG [2014-08-01 12:03:29,838] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalQueryParamInjectableProvider, io.dropwizard.jersey.validation.ConstraintViolationExceptionMapper, io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper, com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchAdapter, io.dropwizard.errors.EarlyEofExceptionMapper]
 INFO  [2014-08-01 12:03:29,887] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
 
 INFO  [2014-08-01 12:03:30,390] io.dropwizard.setup.AdminEnvironment: tasks = 
 
     POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
 
 DEBUG [2014-08-01 12:03:30,391] io.dropwizard.setup.AdminEnvironment: health checks = [deadlocks, template]
-DEBUG [2014-08-01 12:03:37,298] ske.part.partsregister.infrastructure.PartResource: /part.opprettPart() - partId: ske.eventsourcing.eventstore.StringEventSourceIdentifier@5f43d9cf
+DEBUG [2014-08-01 12:03:37,298] ske.part.partsregister.interfaces.rest.PartResource: /part.opprettPart() - partId: ske.eventsourcing.eventstore.StringEventSourceIdentifier@5f43d9cf
 DEBUG [2014-08-01 12:03:37,298] ske.part.partsregister.application.PartCommandHandler: handle(OpprettPersonCommand) - Fornavn: Kalle 
 DEBUG [2014-08-01 12:03:37,370] ske.part.partsregister.domain.part.Part: apply() - PersonOpprettetEvent{id=3}
 DEBUG [2014-08-01 12:03:37,370] ske.part.partsregister.domain.part.Part: handle event: PersonOpprettetEvent{id=3}
@@ -1734,13 +1734,13 @@ INFO  [2014-08-01 12:10:03,425] io.dropwizard.server.ServerFactory: Starting Par
 
 DEBUG [2014-08-01 12:10:03,565] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = []
 INFO  [2014-08-01 12:10:03,756] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
-DEBUG [2014-08-01 12:10:03,859] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.infrastructure.PartResource, ske.part.partsregister.interfaces.PartViewResource]
+DEBUG [2014-08-01 12:10:03,859] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.interfaces.rest.PartResource, ske.part.partsregister.interfaces.PartViewResource]
 DEBUG [2014-08-01 12:10:03,860] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalQueryParamInjectableProvider, io.dropwizard.jersey.validation.ConstraintViolationExceptionMapper, io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper, com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchAdapter, io.dropwizard.errors.EarlyEofExceptionMapper]
 INFO  [2014-08-01 12:10:03,911] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
     GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
     GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
 
@@ -1816,13 +1816,13 @@ INFO  [2014-08-01 12:38:18,940] io.dropwizard.server.ServerFactory: Starting Par
 
 DEBUG [2014-08-01 12:38:19,037] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = []
 INFO  [2014-08-01 12:38:19,247] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
-DEBUG [2014-08-01 12:38:19,328] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.infrastructure.PartResource, ske.part.partsregister.interfaces.PartViewResource]
+DEBUG [2014-08-01 12:38:19,328] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.interfaces.rest.PartResource, ske.part.partsregister.interfaces.PartViewResource]
 DEBUG [2014-08-01 12:38:19,329] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalQueryParamInjectableProvider, io.dropwizard.jersey.validation.ConstraintViolationExceptionMapper, io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper, com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchAdapter, io.dropwizard.errors.EarlyEofExceptionMapper]
 INFO  [2014-08-01 12:38:19,376] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
     GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
     GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
 
@@ -1832,7 +1832,7 @@ INFO  [2014-08-01 12:38:19,910] io.dropwizard.setup.AdminEnvironment: tasks =
 
 DEBUG [2014-08-01 12:38:19,911] io.dropwizard.setup.AdminEnvironment: health checks = [deadlocks, template]
 DEBUG [2014-08-01 12:38:26,002] ske.part.partsregister.interfaces.PartViewResource: /partview - hentPart() - partId: 3
-DEBUG [2014-08-01 12:45:20,211] ske.part.partsregister.infrastructure.PartResource: /part.opprettPart() - partId: ske.eventsourcing.eventstore.StringEventSourceIdentifier@7e35ab86
+DEBUG [2014-08-01 12:45:20,211] ske.part.partsregister.interfaces.rest.PartResource: /part.opprettPart() - partId: ske.eventsourcing.eventstore.StringEventSourceIdentifier@7e35ab86
 DEBUG [2014-08-01 12:45:20,212] ske.part.partsregister.application.PartCommandHandler: handle(OpprettPersonCommand) - Fornavn: Kalle 
 DEBUG [2014-08-01 12:45:20,328] ske.part.partsregister.domain.part.Part: apply() - PersonOpprettetEvent{id=3}
 DEBUG [2014-08-01 12:45:20,328] ske.part.partsregister.domain.part.Part: handle event: PersonOpprettetEvent{id=3}
@@ -1840,7 +1840,7 @@ DEBUG [2014-08-01 12:45:20,329] ske.part.partsregister.domain.part.Part: handle(
 DEBUG [2014-08-01 12:45:20,332] ske.part.partsregister.interfaces.PartEventHandler: recordPersonOpprettetEvent - Fornavn: Kalle
 DEBUG [2014-08-01 12:45:20,333] ske.eventsourcing.eventstore.InMemoryEventStore: save() - number of events before save: 0
 DEBUG [2014-08-01 12:45:20,334] ske.eventsourcing.eventstore.InMemoryEventStore: save() - Storing 1 events to key:EventSourceKey{type=Part, id=3}
-DEBUG [2014-08-01 12:45:33,983] ske.part.partsregister.infrastructure.PartResource: /part.opprettPart() - partId: ske.eventsourcing.eventstore.StringEventSourceIdentifier@3c599d11
+DEBUG [2014-08-01 12:45:33,983] ske.part.partsregister.interfaces.rest.PartResource: /part.opprettPart() - partId: ske.eventsourcing.eventstore.StringEventSourceIdentifier@3c599d11
 DEBUG [2014-08-01 12:45:33,984] ske.part.partsregister.application.PartCommandHandler: handle(OpprettPersonCommand) - Fornavn: Kalle 
 DEBUG [2014-08-01 12:45:33,985] ske.part.partsregister.domain.part.Part: apply() - PersonOpprettetEvent{id=2}
 DEBUG [2014-08-01 12:45:33,985] ske.part.partsregister.domain.part.Part: handle event: PersonOpprettetEvent{id=2}
@@ -1848,7 +1848,7 @@ DEBUG [2014-08-01 12:45:33,985] ske.part.partsregister.domain.part.Part: handle(
 DEBUG [2014-08-01 12:45:33,986] ske.part.partsregister.interfaces.PartEventHandler: recordPersonOpprettetEvent - Fornavn: Kalle
 DEBUG [2014-08-01 12:45:33,986] ske.eventsourcing.eventstore.InMemoryEventStore: save() - number of events before save: 0
 DEBUG [2014-08-01 12:45:33,986] ske.eventsourcing.eventstore.InMemoryEventStore: save() - Storing 1 events to key:EventSourceKey{type=Part, id=2}
-DEBUG [2014-08-01 12:45:46,849] ske.part.partsregister.infrastructure.PartResource: /part.opprettPart() - partId: ske.eventsourcing.eventstore.StringEventSourceIdentifier@6930f5e6
+DEBUG [2014-08-01 12:45:46,849] ske.part.partsregister.interfaces.rest.PartResource: /part.opprettPart() - partId: ske.eventsourcing.eventstore.StringEventSourceIdentifier@6930f5e6
 DEBUG [2014-08-01 12:45:46,849] ske.part.partsregister.application.PartCommandHandler: handle(OpprettPersonCommand) - Fornavn: Nisse 
 DEBUG [2014-08-01 12:45:46,850] ske.part.partsregister.domain.part.Part: apply() - PersonOpprettetEvent{id=1}
 DEBUG [2014-08-01 12:45:46,850] ske.part.partsregister.domain.part.Part: handle event: PersonOpprettetEvent{id=1}
@@ -1859,7 +1859,7 @@ DEBUG [2014-08-01 12:45:46,852] ske.eventsourcing.eventstore.InMemoryEventStore:
 DEBUG [2014-08-01 12:47:37,568] ske.part.partsregister.interfaces.PartViewResource: /partview - hentPart() - partId: 3
 DEBUG [2014-08-01 12:47:44,131] ske.part.partsregister.interfaces.PartViewResource: /partview - hentPart() - partId: 1
 DEBUG [2014-08-01 12:47:50,097] ske.part.partsregister.interfaces.PartViewResource: /partview - hentPart() - partId: 4
-DEBUG [2014-08-01 12:48:08,471] ske.part.partsregister.infrastructure.PartResource: /part.opprettPart() - partId: ske.eventsourcing.eventstore.StringEventSourceIdentifier@5a8e42c7
+DEBUG [2014-08-01 12:48:08,471] ske.part.partsregister.interfaces.rest.PartResource: /part.opprettPart() - partId: ske.eventsourcing.eventstore.StringEventSourceIdentifier@5a8e42c7
 DEBUG [2014-08-01 12:48:08,472] ske.part.partsregister.application.PartCommandHandler: handle(OpprettPersonCommand) - Fornavn: Nisse 
 DEBUG [2014-08-01 12:48:08,472] ske.part.partsregister.domain.part.Part: apply() - PersonOpprettetEvent{id=1}
 DEBUG [2014-08-01 12:48:08,473] ske.part.partsregister.domain.part.Part: handle event: PersonOpprettetEvent{id=1}
@@ -1867,7 +1867,7 @@ DEBUG [2014-08-01 12:48:08,473] ske.part.partsregister.domain.part.Part: handle(
 DEBUG [2014-08-01 12:48:08,473] ske.part.partsregister.interfaces.PartEventHandler: recordPersonOpprettetEvent - Fornavn: Nisse
 DEBUG [2014-08-01 12:48:08,474] ske.eventsourcing.eventstore.InMemoryEventStore: save() - number of events before save: 0
 DEBUG [2014-08-01 12:48:08,474] ske.eventsourcing.eventstore.InMemoryEventStore: save() - Storing 1 events to key:EventSourceKey{type=Part, id=1}
-DEBUG [2014-08-01 12:48:41,606] ske.part.partsregister.infrastructure.PartResource: /part.opprettPart() - partId: ske.eventsourcing.eventstore.StringEventSourceIdentifier@12f57d41
+DEBUG [2014-08-01 12:48:41,606] ske.part.partsregister.interfaces.rest.PartResource: /part.opprettPart() - partId: ske.eventsourcing.eventstore.StringEventSourceIdentifier@12f57d41
 DEBUG [2014-08-01 12:48:41,606] ske.part.partsregister.application.PartCommandHandler: handle(OpprettPersonCommand) - Fornavn: Nisse 
 DEBUG [2014-08-01 12:48:41,607] ske.part.partsregister.domain.part.Part: apply() - PersonOpprettetEvent{id=3}
 DEBUG [2014-08-01 12:48:41,607] ske.part.partsregister.domain.part.Part: handle event: PersonOpprettetEvent{id=3}
@@ -1885,13 +1885,13 @@ INFO  [2014-08-01 13:24:40,786] io.dropwizard.server.ServerFactory: Starting Par
 
 DEBUG [2014-08-01 13:24:40,893] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = []
 INFO  [2014-08-01 13:24:41,073] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
-DEBUG [2014-08-01 13:24:41,144] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.infrastructure.PartResource, ske.part.partsregister.interfaces.PartViewResource]
+DEBUG [2014-08-01 13:24:41,144] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.interfaces.rest.PartResource, ske.part.partsregister.interfaces.PartViewResource]
 DEBUG [2014-08-01 13:24:41,144] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalQueryParamInjectableProvider, io.dropwizard.jersey.validation.ConstraintViolationExceptionMapper, io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper, com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchAdapter, io.dropwizard.errors.EarlyEofExceptionMapper]
 INFO  [2014-08-01 13:24:41,180] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
     GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
     GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
 
@@ -1956,13 +1956,13 @@ INFO  [2014-08-01 13:29:41,430] io.dropwizard.server.ServerFactory: Starting Par
 
 DEBUG [2014-08-01 13:29:41,540] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = []
 INFO  [2014-08-01 13:29:41,704] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
-DEBUG [2014-08-01 13:29:41,783] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.infrastructure.PartResource, ske.part.partsregister.interfaces.PartViewResource]
+DEBUG [2014-08-01 13:29:41,783] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.interfaces.rest.PartResource, ske.part.partsregister.interfaces.PartViewResource]
 DEBUG [2014-08-01 13:29:41,784] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalQueryParamInjectableProvider, io.dropwizard.jersey.validation.ConstraintViolationExceptionMapper, io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper, com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchAdapter, io.dropwizard.errors.EarlyEofExceptionMapper]
 INFO  [2014-08-01 13:29:41,823] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
     GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
     GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
 
@@ -1980,13 +1980,13 @@ INFO  [2014-08-01 13:30:02,912] io.dropwizard.server.ServerFactory: Starting Par
 
 DEBUG [2014-08-01 13:30:03,007] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = []
 INFO  [2014-08-01 13:30:03,227] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
-DEBUG [2014-08-01 13:30:03,299] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.infrastructure.PartResource, ske.part.partsregister.interfaces.PartViewResource]
+DEBUG [2014-08-01 13:30:03,299] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.interfaces.rest.PartResource, ske.part.partsregister.interfaces.PartViewResource]
 DEBUG [2014-08-01 13:30:03,299] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalQueryParamInjectableProvider, io.dropwizard.jersey.validation.ConstraintViolationExceptionMapper, io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper, com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchAdapter, io.dropwizard.errors.EarlyEofExceptionMapper]
 INFO  [2014-08-01 13:30:03,336] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
     GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
     GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
 
@@ -2004,13 +2004,13 @@ INFO  [2014-08-01 13:31:08,016] io.dropwizard.server.ServerFactory: Starting Par
 
 DEBUG [2014-08-01 13:31:08,143] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = []
 INFO  [2014-08-01 13:31:08,328] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
-DEBUG [2014-08-01 13:31:08,400] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.infrastructure.PartResource, ske.part.partsregister.interfaces.PartViewResource]
+DEBUG [2014-08-01 13:31:08,400] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.interfaces.rest.PartResource, ske.part.partsregister.interfaces.PartViewResource]
 DEBUG [2014-08-01 13:31:08,400] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalQueryParamInjectableProvider, io.dropwizard.jersey.validation.ConstraintViolationExceptionMapper, io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper, com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchAdapter, io.dropwizard.errors.EarlyEofExceptionMapper]
 INFO  [2014-08-01 13:31:08,446] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
     GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
     GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
 
@@ -2029,13 +2029,13 @@ INFO  [2014-08-01 13:45:56,722] io.dropwizard.server.ServerFactory: Starting Par
 
 DEBUG [2014-08-01 13:45:56,836] io.dropwizard.lifecycle.setup.LifecycleEnvironment: managed objects = []
 INFO  [2014-08-01 13:45:56,988] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
-DEBUG [2014-08-01 13:45:57,072] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.infrastructure.PartResource, ske.part.partsregister.interfaces.PartViewResource]
+DEBUG [2014-08-01 13:45:57,072] io.dropwizard.jersey.DropwizardResourceConfig: resources = [ske.part.partsregister.infrastructure.HelloWorldResource, ske.part.partsregister.interfaces.rest.PartResource, ske.part.partsregister.interfaces.PartViewResource]
 DEBUG [2014-08-01 13:45:57,072] io.dropwizard.jersey.DropwizardResourceConfig: providers = [io.dropwizard.jersey.caching.CacheControlledResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalResourceMethodDispatchAdapter, io.dropwizard.jersey.guava.OptionalQueryParamInjectableProvider, io.dropwizard.jersey.validation.ConstraintViolationExceptionMapper, io.dropwizard.jersey.jackson.JsonProcessingExceptionMapper, com.codahale.metrics.jersey.InstrumentedResourceMethodDispatchAdapter, io.dropwizard.errors.EarlyEofExceptionMapper]
 INFO  [2014-08-01 13:45:57,112] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
     GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
     GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
 
@@ -2045,7 +2045,7 @@ INFO  [2014-08-01 13:45:57,648] io.dropwizard.setup.AdminEnvironment: tasks =
 
 DEBUG [2014-08-01 13:45:57,649] io.dropwizard.setup.AdminEnvironment: health checks = [deadlocks, template]
 DEBUG [2014-08-01 13:50:48,944] ske.part.partsregister.interfaces.PartViewResource: /partview - hentPartMedId() - partId: 3
-DEBUG [2014-08-01 13:50:57,292] ske.part.partsregister.infrastructure.PartResource: /part.opprettPart() - partId: ske.eventsourcing.eventstore.StringEventSourceIdentifier@5eee6cf0
+DEBUG [2014-08-01 13:50:57,292] ske.part.partsregister.interfaces.rest.PartResource: /part.opprettPart() - partId: ske.eventsourcing.eventstore.StringEventSourceIdentifier@5eee6cf0
 DEBUG [2014-08-01 13:50:57,292] ske.part.partsregister.application.PartCommandHandler: handle(OpprettPersonCommand) - Fornavn: Nisse 
 DEBUG [2014-08-01 13:50:57,368] ske.part.partsregister.domain.part.Part: apply() - PersonOpprettetEvent{id=3}
 DEBUG [2014-08-01 13:50:57,369] ske.part.partsregister.domain.part.Part: handle event: PersonOpprettetEvent{id=3}
@@ -2053,7 +2053,7 @@ DEBUG [2014-08-01 13:50:57,370] ske.part.partsregister.domain.part.Part: handle(
 DEBUG [2014-08-01 13:50:57,374] ske.part.partsregister.interfaces.PartEventHandler: recordPersonOpprettetEvent - Fornavn: Nisse
 DEBUG [2014-08-01 13:50:57,375] ske.eventsourcing.eventstore.InMemoryEventStore: save() - number of events on 3 before save: 0
 DEBUG [2014-08-01 13:50:57,376] ske.eventsourcing.eventstore.InMemoryEventStore: save() - Storing 1 events to key:EventSourceKey{type=Part, id=3}
-DEBUG [2014-08-01 13:51:07,451] ske.part.partsregister.infrastructure.PartResource: /part.opprettPart() - partId: ske.eventsourcing.eventstore.StringEventSourceIdentifier@bf09592
+DEBUG [2014-08-01 13:51:07,451] ske.part.partsregister.interfaces.rest.PartResource: /part.opprettPart() - partId: ske.eventsourcing.eventstore.StringEventSourceIdentifier@bf09592
 DEBUG [2014-08-01 13:51:07,451] ske.part.partsregister.application.PartCommandHandler: handle(OpprettPersonCommand) - Fornavn: Nisse 
 DEBUG [2014-08-01 13:51:07,452] ske.part.partsregister.domain.part.Part: apply() - PersonOpprettetEvent{id=3}
 DEBUG [2014-08-01 13:51:07,452] ske.part.partsregister.domain.part.Part: handle event: PersonOpprettetEvent{id=3}

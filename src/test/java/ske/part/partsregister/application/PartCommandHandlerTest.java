@@ -1,10 +1,5 @@
 package ske.part.partsregister.application;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
-
-import java.util.List;
-
 import com.google.common.base.Optional;
 import com.google.common.eventbus.EventBus;
 import org.junit.Test;
@@ -18,6 +13,11 @@ import ske.part.partsregister.domain.part.FornavnEndretEvent;
 import ske.part.partsregister.domain.part.Part;
 import ske.part.partsregister.domain.part.PersonOpprettetEvent;
 
+import java.util.List;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
 public class PartCommandHandlerTest {
 
     @Test
@@ -25,7 +25,7 @@ public class PartCommandHandlerTest {
 
         EventStore eventStore = new InMemoryEventStore();
 
-        PartCommandHandler partCommandHandler = new PartCommandHandler(eventStore, Optional.<EventBus> absent());
+        PartCommandHandler partCommandHandler = new PartCommandHandler(eventStore, Optional.<EventBus>absent());
         EventSourceIdentifier id = new StringEventSourceIdentifier("1");
 
         // when
@@ -43,7 +43,7 @@ public class PartCommandHandlerTest {
         EventStore eventStore = new InMemoryEventStore();
 
 
-        PartCommandHandler partCommandHandler = new PartCommandHandler(eventStore, Optional.<EventBus> absent());
+        PartCommandHandler partCommandHandler = new PartCommandHandler(eventStore, Optional.<EventBus>absent());
         EventSourceIdentifier id = new StringEventSourceIdentifier("12");
 
         // when

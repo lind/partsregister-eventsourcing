@@ -1,4 +1,4 @@
-package ske.part.partsregister.infrastructure;
+/*package ske.part.partsregister.infrastructure;
 
 import com.codahale.metrics.health.HealthCheck;
 
@@ -18,3 +18,4 @@ public class TemplateHealthCheck extends HealthCheck {
         return HealthCheck.Result.healthy();
     }
 }
+*/

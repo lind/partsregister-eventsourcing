@@ -1,17 +1,11 @@
 package ske.part.partsregister.infrastructure;
 
-import com.google.common.base.Optional;
-import com.google.common.eventbus.EventBus;
-import io.dropwizard.Application;
-import io.dropwizard.setup.Bootstrap;
-import io.dropwizard.setup.Environment;
-import ske.eventsourcing.eventstore.EventStore;
-import ske.eventsourcing.eventstore.InMemoryEventStore;
-import ske.part.partsregister.application.PartCommandHandler;
-import ske.part.partsregister.interfaces.PartEventHandler;
-import ske.part.partsregister.interfaces.PartViewResource;
-import ske.part.partsregister.interfaces.PartViewStore;
+//import io.dropwizard.Application;
+//import io.dropwizard.setup.Bootstrap;
+//import io.dropwizard.setup.Environment;
 
+// Brukes med Dropwizard
+/*
 public class PartsregisterApplication extends Application<PartsregisterConfiguration> {
 
     private EventBus eventBus;
@@ -61,4 +55,7 @@ public class PartsregisterApplication extends Application<PartsregisterConfigura
         environment.jersey().register(partResource);
         environment.jersey().register(partViewResource);
     }
+
 }
+
+*/

@@ -12,7 +12,7 @@ INFO  [2014-08-01 11:19:19,848] com.sun.jersey.server.impl.application.WebApplic
 INFO  [2014-08-01 11:19:19,968] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
 
 INFO  [2014-08-01 11:19:20,474] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@38ba271{/,null,AVAILABLE}
 INFO  [2014-08-01 11:19:20,483] io.dropwizard.setup.AdminEnvironment: tasks = 
@@ -37,7 +37,7 @@ INFO  [2014-08-01 11:23:33,129] com.sun.jersey.server.impl.application.WebApplic
 INFO  [2014-08-01 11:23:33,267] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
 
 INFO  [2014-08-01 11:23:33,816] io.dropwizard.setup.AdminEnvironment: tasks = 
 
@@ -54,7 +54,7 @@ INFO  [2014-08-01 11:29:09,094] com.sun.jersey.server.impl.application.WebApplic
 INFO  [2014-08-01 11:29:09,249] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
 
 INFO  [2014-08-01 11:29:09,831] io.dropwizard.setup.AdminEnvironment: tasks = 
 
@@ -71,11 +71,11 @@ INFO  [2014-08-01 11:30:23,170] com.sun.jersey.server.impl.application.WebApplic
 INFO  [2014-08-01 11:30:23,325] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
 
 ERROR [2014-08-01 11:30:23,898] com.sun.jersey.spi.inject.Errors: The following errors and warnings have been detected with resource and/or provider classes:
-  SEVERE: Consuming media type conflict. The resource methods public void ske.part.partsregister.infrastructure.PartResource.opprettPart(com.google.common.base.Optional) and public void ske.part.partsregister.infrastructure.PartResource.opprettPart(java.lang.String) can consume the same media type
+  SEVERE: Consuming media type conflict. The resource methods public void ske.part.partsregister.interfaces.rest.PartResource.opprettPart(com.google.common.base.Optional) and public void ske.part.partsregister.interfaces.rest.PartResource.opprettPart(java.lang.String) can consume the same media type
 WARN  [2014-08-01 11:30:23,907] /: unavailable
 ! com.sun.jersey.spi.inject.Errors$ErrorMessagesException: null
 ! at com.sun.jersey.spi.inject.Errors.processErrorMessages(Errors.java:170) ~[partsregister-eventsourcing-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
@@ -516,8 +516,8 @@ INFO  [2014-08-01 11:32:32,452] com.sun.jersey.server.impl.application.WebApplic
 INFO  [2014-08-01 11:32:32,600] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
 
 INFO  [2014-08-01 11:32:33,202] io.dropwizard.setup.AdminEnvironment: tasks = 
 
@@ -599,8 +599,8 @@ INFO  [2014-08-01 11:37:05,250] com.sun.jersey.server.impl.application.WebApplic
 INFO  [2014-08-01 11:37:05,441] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
 
 INFO  [2014-08-01 11:37:06,067] io.dropwizard.setup.AdminEnvironment: tasks = 
 
@@ -682,8 +682,8 @@ INFO  [2014-08-01 11:39:36,332] com.sun.jersey.server.impl.application.WebApplic
 INFO  [2014-08-01 11:39:36,497] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
 
 INFO  [2014-08-01 11:39:37,099] io.dropwizard.setup.AdminEnvironment: tasks = 
 
@@ -952,8 +952,8 @@ INFO  [2014-08-01 11:50:15,682] com.sun.jersey.server.impl.application.WebApplic
 INFO  [2014-08-01 11:50:15,798] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
 
 INFO  [2014-08-01 11:50:16,298] io.dropwizard.setup.AdminEnvironment: tasks = 
 
@@ -995,8 +995,8 @@ INFO  [2014-08-01 11:54:45,033] com.sun.jersey.server.impl.application.WebApplic
 INFO  [2014-08-01 11:54:45,166] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
 
 INFO  [2014-08-01 11:54:45,723] io.dropwizard.setup.AdminEnvironment: tasks = 
 
@@ -1013,8 +1013,8 @@ INFO  [2014-08-01 12:03:29,754] com.sun.jersey.server.impl.application.WebApplic
 INFO  [2014-08-01 12:03:29,887] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
 
 INFO  [2014-08-01 12:03:30,390] io.dropwizard.setup.AdminEnvironment: tasks = 
 
@@ -1031,8 +1031,8 @@ INFO  [2014-08-01 12:10:03,756] com.sun.jersey.server.impl.application.WebApplic
 INFO  [2014-08-01 12:10:03,911] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
     GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
     GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
 
@@ -1108,8 +1108,8 @@ INFO  [2014-08-01 12:38:19,247] com.sun.jersey.server.impl.application.WebApplic
 INFO  [2014-08-01 12:38:19,376] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
     GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
     GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
 
@@ -1128,8 +1128,8 @@ INFO  [2014-08-01 13:24:41,073] com.sun.jersey.server.impl.application.WebApplic
 INFO  [2014-08-01 13:24:41,180] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
     GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
     GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
 
@@ -1195,8 +1195,8 @@ INFO  [2014-08-01 13:29:41,704] com.sun.jersey.server.impl.application.WebApplic
 INFO  [2014-08-01 13:29:41,823] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
     GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
     GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
 
@@ -1215,8 +1215,8 @@ INFO  [2014-08-01 13:30:03,227] com.sun.jersey.server.impl.application.WebApplic
 INFO  [2014-08-01 13:30:03,336] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
     GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
     GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
 
@@ -1235,8 +1235,8 @@ INFO  [2014-08-01 13:31:08,328] com.sun.jersey.server.impl.application.WebApplic
 INFO  [2014-08-01 13:31:08,446] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
     GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
     GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
 
@@ -1255,8 +1255,8 @@ INFO  [2014-08-01 13:45:56,988] com.sun.jersey.server.impl.application.WebApplic
 INFO  [2014-08-01 13:45:57,112] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /hello-world (ske.part.partsregister.infrastructure.HelloWorldResource)
-    POST    /part (ske.part.partsregister.infrastructure.PartResource)
-    POST    /part/test (ske.part.partsregister.infrastructure.PartResource)
+    POST    /part (ske.part.partsregister.interfaces.rest.PartResource)
+    POST    /part/test (ske.part.partsregister.interfaces.rest.PartResource)
     GET     /partview (ske.part.partsregister.interfaces.PartViewResource)
     GET     /partview/{id} (ske.part.partsregister.interfaces.PartViewResource)
 
