@@ -1,9 +1,0 @@
-/home/m98958/kode/partsregister-eventsourcing/src/test/java/ske/eventsourcing/domain/DummyChangeAddressEvent.java
-/home/m98958/kode/partsregister-eventsourcing/src/test/java/ske/part/partsregister/application/PartCommandHandlerTest.java
-/home/m98958/kode/partsregister-eventsourcing/src/test/java/ske/eventsourcing/domain/DummyAggregateCreatedEvent.java
-/home/m98958/kode/partsregister-eventsourcing/src/test/java/ske/eventsourcing/domain/AggregateRootTest.java
-/home/m98958/kode/partsregister-eventsourcing/src/test/java/ske/part/partsregister/domain/part/PartTest.java
-/home/m98958/kode/partsregister-eventsourcing/src/test/java/ske/eventsourcing/util/ReflectionUtilsTest.java
-/home/m98958/kode/partsregister-eventsourcing/src/test/java/ske/eventsourcing/domain/DummyChangedNameEvent.java
-/home/m98958/kode/partsregister-eventsourcing/src/test/java/ske/eventsourcing/domain/DummyAggregateRoot.java
-/home/m98958/kode/partsregister-eventsourcing/src/test/java/ske/eventsourcing/domain/DummyChangedAgeEvent.java
