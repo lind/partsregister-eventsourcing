@@ -7,21 +7,27 @@ import ske.part.partsregister.application.OpprettPersonCommand;
 import ske.part.partsregister.application.PartCommandHandler;
 
 import javax.inject.Inject;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
 @Path("/part")
 @Consumes(MediaType.APPLICATION_JSON)
+@Produces({MediaType.APPLICATION_JSON, MediaType.TEXT_PLAIN})
 public class PartResource {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @Inject
     private PartCommandHandler commandHandler;
 
+    @Inject
     public PartResource(PartCommandHandler commandHandler) {
         this.commandHandler = commandHandler;
+    }
+
+
+    @Path("/hei")
+    @GET
+    public String hei() {
+        return "hei";
     }
 
     @Path("/test")
@@ -34,8 +40,8 @@ public class PartResource {
     }
 
     @POST
-//    @Timed
     public void opprettPart(Optional<OpprettPersonCommand> command) {
+        System.out.println("/part.opprettPart() - partId:");
         logger.debug("/part.opprettPart() - partId: {}",
                 command.isPresent() ? command.get().getId() : "-- Command=null --");
         System.out.println("/part.opprettPart() - partId:");

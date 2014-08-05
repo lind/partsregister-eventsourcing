@@ -1,6 +1,5 @@
 package ske.part.partsregister.application;
 
-import com.google.common.base.Optional;
 import com.google.common.eventbus.EventBus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,17 +8,18 @@ import ske.eventsourcing.eventstore.EventSourceIdentifier;
 import ske.eventsourcing.eventstore.EventStore;
 import ske.part.partsregister.domain.part.Part;
 
+import javax.inject.Inject;
 import java.util.List;
 
 public class PartCommandHandler {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    private Optional<EventBus> eventBus;
+    private EventBus eventBus;
     private EventStore eventStore;
 
-    //    @Inject
-    public PartCommandHandler(EventStore eventStore, Optional<EventBus> eventBus) {
+    @Inject
+    public PartCommandHandler(EventStore eventStore, EventBus eventBus) {
         this.eventBus = eventBus;
         this.eventStore = eventStore;
     }
@@ -31,10 +31,10 @@ public class PartCommandHandler {
 
         Part part = new Part(command.getId(), command.getFornavn(), command.getEtternavn());
 
-        if (eventBus.isPresent()) {
+        if (null != eventBus) {
             List<Event> events = part.getUnsavedEvents();
             for (Event event : events) {
-                eventBus.get().post(event);
+                eventBus.post(event);
             }
         }
         eventStore.save(part);
@@ -49,10 +49,10 @@ public class PartCommandHandler {
         part.endreFornavn(endreNavnCommand.getFornavn());
         part.endreEtternavn(endreNavnCommand.getEtternavn());
 
-        if (eventBus.isPresent()) {
+        if (null != eventBus) {
             List<Event> events = part.getUnsavedEvents();
             for (Event event : events) {
-                eventBus.get().post(event);
+                eventBus.post(event);
             }
         }
 

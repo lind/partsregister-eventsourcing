@@ -1,7 +1,5 @@
 package ske.part.partsregister.application;
 
-import com.google.common.base.Optional;
-import com.google.common.eventbus.EventBus;
 import org.junit.Test;
 import ske.eventsourcing.event.Event;
 import ske.eventsourcing.eventstore.EventSourceIdentifier;
@@ -25,7 +23,7 @@ public class PartCommandHandlerTest {
 
         EventStore eventStore = new InMemoryEventStore();
 
-        PartCommandHandler partCommandHandler = new PartCommandHandler(eventStore, Optional.<EventBus>absent());
+        PartCommandHandler partCommandHandler = new PartCommandHandler(eventStore, null);
         EventSourceIdentifier id = new StringEventSourceIdentifier("1");
 
         // when
@@ -43,7 +41,7 @@ public class PartCommandHandlerTest {
         EventStore eventStore = new InMemoryEventStore();
 
 
-        PartCommandHandler partCommandHandler = new PartCommandHandler(eventStore, Optional.<EventBus>absent());
+        PartCommandHandler partCommandHandler = new PartCommandHandler(eventStore, null);
         EventSourceIdentifier id = new StringEventSourceIdentifier("12");
 
         // when
