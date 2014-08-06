@@ -90,12 +90,14 @@ Lagt til disse under. (ikke hibernate validator)
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
         </dependency>
+        <!--
         <dependency>
             <groupId>com.google.inject</groupId>
             <artifactId>guice</artifactId>
             <version>3.0</version>
             <scope>test</scope>
         </dependency>
+        -->
     </dependencies>
     <build>
 
