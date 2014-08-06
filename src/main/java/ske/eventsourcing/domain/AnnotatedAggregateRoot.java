@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
 import java.util.Map;
 
 /**
- * Base class for AggregateRoot with annotated handler methods.
+ * Base class for aggregate roots with annotated handler methods.
  */
 public class AnnotatedAggregateRoot extends AggregateRoot {
 

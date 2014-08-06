@@ -9,6 +9,9 @@ import ske.eventsourcing.util.ReflectionUtils;
 
 import java.lang.reflect.Method;
 
+/**
+ * Base class for aggregate roots using reflection to find handler methods.
+ */
 public class SimpleAggregateRoot extends AggregateRoot {
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 

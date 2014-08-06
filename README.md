@@ -14,3 +14,26 @@ java -jar target/partsregister-eventsourcing-1.0-SNAPSHOT.jar server partsregist
 
 http://localhost:8080  
 admin port: 8081
+
+
+## TODO
+* fiks logback (uten Dropwizard)
+* Jobbe mer med REST APIet. Få til Jersys linker bl.a.
+* Lage [Text Fixtures](https://github.com/junit-team/junit/wiki/Test-fixtures) for enklere å teste Command - EventSource - state til aggregatet. 
+    * Given - denne event historikken 
+    * When - denne/disse kommandoer utføres
+    * Then - skal tilstanden til aggregatet bli slik (og disse eventer skal bli generert med disse verdier)
+* Skille ut lesemodellen som lytter på eventer (først ut i egen pakke ske.part.partview) (/rest/partview?)
+* Tilby et API for å hente eventer (som feeds? hente fra en gitt aggregate root og en sekvens id? hente alle med paging?)
+* Legge til en ny lesemodell som aggregerer informasjon som f.eks. statistikk - enkelt ´Datavarehus´. Lytte på
+eventbussen og aggregere informasjon. REST API til dette. (/rest/partmart?)
+* Bruke [Vert.x sin EventBus](http://vertx.io/core_manual_java.html#the-event-bus) isteden for Guava slik at hanlere
+kan startes i flere JVMer. (Hvordan håndtere at Vert.x sin eventbus går ned? Hvordan håndtere at handlere går ned?
+ API som henter eventer fra en gitt id eller tidspunkt, )
+* Bruke [Hadoop](http://hadoop.apache.org/) som persistering for eventstore og [Spark](http://spark.apache.org/) som ´Datavarehus´/eventanalyse.
+
+Og videre...
+
+* Så klart en mer rik funksjonalitet i domenet (part)
+* Versjonering av eventer (med oversettere slik at handler metodene kun trenger å håndtere siste versjonen)
+* Snapshotting av aggregate state (med [Memento pattern](http://en.wikipedia.org/wiki/Memento_pattern)) 
