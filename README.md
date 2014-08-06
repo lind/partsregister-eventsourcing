@@ -15,7 +15,7 @@ som nå ligger i samme JVM og lytter på nye eventer over en EventBus
 
 
 ## API
-RESTful API som også følger HATEOAS
+RESTful API som også følger [HATEOAS](http://en.wikipedia.org/wiki/HATEOAS)
 
 /parter
 /parter/opprett
@@ -24,21 +24,16 @@ RESTful API som også følger HATEOAS
 	/… kommandoer
 	/eventer (også som feeds?)
 
-Hver ressurs har underressurser med kommandoer og eventer. God strategi?
+Hver ressurs har underressurser med kommandoer og eventer. **God strategi?**
 Kommandoer passer ikke så bra sammen med ressurs og CRUD.
 
-Bruker Dropwizard. Bygg en Fat JAR med 
-```
-mvn package
-```
+## Bruk
 Start Jetty med 
 ```
-java -jar target/partsregister-eventsourcing-1.0-SNAPSHOT.jar server partsregister.yml
+mvn jetty:run
 ```
 
-http://localhost:8080  
-admin port: 8081
-
+localhost:8000
 
 ## TODO
 * fiks logback (uten Dropwizard)

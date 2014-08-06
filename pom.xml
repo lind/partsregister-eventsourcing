@@ -142,6 +142,7 @@ Lagt til disse under. (ikke hibernate validator)
                 </configuration>
             </plugin>
 
+            <!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
@@ -152,11 +153,9 @@ Lagt til disse under. (ikke hibernate validator)
                         <phase>validate</phase>
                         <configuration>
                             <configLocation>src/main/resources/checkstyle/checkstyle-only-formatting.xml
-                            </configLocation>
-                            <!--                            <configLocation>checkstyle.xml</configLocation> -->
                             <encoding>UTF-8</encoding>
-                            <consoleOutput>true</consoleOutput>
-                            <failsOnError>true</failsOnError>
+                            <consoleOutput>false</consoleOutput>
+                            <failsOnError>false</failsOnError>
                             <linkXRef>false</linkXRef>
                         </configuration>
                         <goals>
@@ -165,7 +164,7 @@ Lagt til disse under. (ikke hibernate validator)
                     </execution>
                 </executions>
             </plugin>
-
+-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
