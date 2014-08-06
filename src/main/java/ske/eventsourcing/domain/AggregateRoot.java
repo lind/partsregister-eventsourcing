@@ -10,9 +10,6 @@ import ske.eventsourcing.eventstore.EventSourceIdentifier;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Implementasjon av en Aggregate Root. <br>
- */
 public abstract class AggregateRoot implements EventSource {
 
     private final Logger log = LoggerFactory.getLogger(this.getClass());
@@ -26,7 +23,7 @@ public abstract class AggregateRoot implements EventSource {
     }
 
     protected void apply(DomainEvent event) {
-        log.debug("apply() - " + event);
+        log.debug("apply() - event: {} - to Aggregate: {} ", event, this.getClass().getSimpleName());
         unsavedEvents.add(event);
         handle(event);
     }
@@ -56,8 +53,6 @@ public abstract class AggregateRoot implements EventSource {
     public void clearUnsavedEvents() {
         unsavedEvents.clear();
     }
-
-    // handle -> get handelMethod from map and invoke metohd
 
     protected abstract void handle(Event event);
 
