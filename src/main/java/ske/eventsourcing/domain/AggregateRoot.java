@@ -12,18 +12,18 @@ import java.util.List;
 
 public abstract class AggregateRoot implements EventSource {
 
-    private final Logger log = LoggerFactory.getLogger(this.getClass());
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
     private final EventSourceIdentifier id;
 
     // TODO: version (Long) as sequence
-    private final List<DomainEvent> unsavedEvents = new ArrayList<DomainEvent>();
+    private final List<DomainEvent> unsavedEvents = new ArrayList<>();
 
     public AggregateRoot(EventSourceIdentifier id) {
         this.id = id;
     }
 
     protected void apply(DomainEvent event) {
-        log.debug("apply() - event: {} - to Aggregate: {} ", event, this.getClass().getSimpleName());
+        logger.debug("apply() - event: {} - to Aggregate: {} ", event, this.getClass().getSimpleName());
         unsavedEvents.add(event);
         handle(event);
     }

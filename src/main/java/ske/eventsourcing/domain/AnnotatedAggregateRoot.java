@@ -16,7 +16,7 @@ import java.util.Map;
  */
 public class AnnotatedAggregateRoot extends AggregateRoot {
 
-    private final Logger log = LoggerFactory.getLogger(this.getClass());
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     private final Map<Class<?>, EventHandlerMethod> eventHandlerMethodMap;
 
@@ -26,7 +26,7 @@ public class AnnotatedAggregateRoot extends AggregateRoot {
     }
 
     protected void handle(Event event) {
-        log.debug("handle event: {}", event);
+        logger.debug("handle event: {}", event);
         EventHandlerMethod handlerMethod = eventHandlerMethodMap.get(event.getClass());
 
         Preconditions.checkNotNull(handlerMethod, "Class %s has no handle method for event: %s", this.getClass().getSimpleName(), event.getClass().getSimpleName());

@@ -8,7 +8,7 @@ import ske.eventsourcing.eventstore.EventSourceIdentifier;
 
 public class Part extends AnnotatedAggregateRoot {
 
-    private final Logger log = LoggerFactory.getLogger(this.getClass());
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     private String fornavn;
     // private String mellomnavn;
@@ -41,20 +41,20 @@ public class Part extends AnnotatedAggregateRoot {
 
     @EventHandler
     public void handle(PersonOpprettetEvent event) {
-        log.debug("handle() -> PersonOpprettetEvent()");
+        logger.debug("handle() -> PersonOpprettetEvent()");
         this.fornavn = event.getFornavn();
         this.etternavn = event.getEtternavn();
     }
 
     @EventHandler
     public void handle(FornavnEndretEvent event) {
-        log.debug("handle() -> FornavnEndretEvent");
+        logger.debug("handle() -> FornavnEndretEvent");
         this.fornavn = event.getFornavn();
     }
 
     @EventHandler
     public void handle(EtternavnEndretEvent event) {
-        log.debug("handle() -> EtternavnEndretEvent");
+        logger.debug("handle() -> EtternavnEndretEvent");
         this.etternavn = event.getEtternavn();
     }
 

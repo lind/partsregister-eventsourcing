@@ -16,17 +16,17 @@ import static com.google.common.collect.Maps.newHashMap;
  * key.
  */
 public class InMemoryEventStore extends BaseEventStore {
-    private final Logger log = LoggerFactory.getLogger(this.getClass());
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     private final Map<EventSourceKey, List<Event>> eventStorage = newHashMap();
 
     public <T extends EventSource> T loadEventSource(Class<T> type, EventSourceIdentifier id) {
         EventSourceKey key = new EventSourceKey(type, id);
 
-        log.debug("Loading events with key:{}", key);
+        logger.debug("Loading events with key:{}", key);
 
         List<Event> events = eventStorage.get(key);
-        log.debug("Nr of events from source with type:{} and id:{} are:{}", type, id,
+        logger.debug("Nr of events from source with type:{} and id:{} are:{}", type, id,
                 (null == events ? 0 : events.size()));
 
         T eventSource = createEventSource(type, id);
@@ -49,12 +49,13 @@ public class InMemoryEventStore extends BaseEventStore {
 
         int numberOfStoredEvents = events.size();
         List<Event> eventsToSave = eventsource.getUnsavedEvents();
-        log.debug("save() - number of events on {} before save: {}", eventsource.getEventSourceIdentifier().asString(), numberOfStoredEvents);
+        logger.debug("save() - number of events on {} before save: {}", eventsource.getEventSourceIdentifier().asString(),
+                numberOfStoredEvents);
         for (Event event : eventsToSave) {
             event.setSequenceNumber(++numberOfStoredEvents);
             events.add(event);
         }
-        log.debug("save() - Storing {} events to key:{}", eventsToSave.size(), key);
+        logger.debug("save() - Storing {} events to key:{}", eventsToSave.size(), key);
         eventStorage.put(key, events);
     }
 

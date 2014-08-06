@@ -18,12 +18,12 @@ public class HelloWorldResource {
         this.testService = testService;
     }
 
-    private Logger log = LoggerFactory.getLogger(this.getClass());
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     // localhost:8080/rest/hello
     @GET
     public Message helloWorld() {
-        log.debug("helloWorld");
+        logger.debug("helloWorld");
         return hello("world!");
     }
 
@@ -37,7 +37,7 @@ public class HelloWorldResource {
     @GET
     @Path("/ping")
     public Message ping() {
-        log.debug("ping()");
+        logger.debug("ping()");
         return new Message("pong");
     }
 

@@ -13,7 +13,7 @@ import java.lang.reflect.Method;
  * Base class for aggregate roots using reflection to find handler methods.
  */
 public class SimpleAggregateRoot extends AggregateRoot {
-    private final Logger log = LoggerFactory.getLogger(this.getClass());
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     public SimpleAggregateRoot(EventSourceIdentifier id) {
         super(id);
@@ -21,7 +21,7 @@ public class SimpleAggregateRoot extends AggregateRoot {
 
     @Override
     protected void handle(Event event) {
-        log.debug("handle event: {}", event);
+        logger.debug("handle event: {}", event);
 
         // Preconditions.checkNotNull(handlerMethod,
         // "No handle method for event: {}", event.getClass().getSimpleName());
