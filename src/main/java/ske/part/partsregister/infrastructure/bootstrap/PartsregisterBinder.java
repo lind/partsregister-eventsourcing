@@ -5,6 +5,7 @@ import org.glassfish.hk2.utilities.binding.AbstractBinder;
 import ske.eventsourcing.eventstore.EventStore;
 import ske.eventsourcing.eventstore.InMemoryEventStore;
 import ske.part.partsregister.application.PartCommandHandler;
+import ske.part.partsregister.interfaces.rest.test.TestService;
 
 public class PartsregisterBinder extends AbstractBinder {
 
@@ -13,6 +14,8 @@ public class PartsregisterBinder extends AbstractBinder {
         bind(PartCommandHandler.class).to(PartCommandHandler.class);
         bind(InMemoryEventStore.class).to(EventStore.class);
         bind(EventBus.class).to(EventBus.class);
+
+        bind(TestService.class).to(TestService.class);
     }
 
 }

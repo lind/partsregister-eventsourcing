@@ -5,14 +5,14 @@ import ske.eventsourcing.eventstore.EventSourceIdentifier;
 
 public class DummyChangedNameEvent extends DomainEvent {
 
-	private final String name;
+    private final String name;
 
-	public DummyChangedNameEvent(EventSourceIdentifier id, String name) {
+    public DummyChangedNameEvent(EventSourceIdentifier id, String name) {
         super(id);
-		this.name = name;
-	}
+        this.name = name;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 }

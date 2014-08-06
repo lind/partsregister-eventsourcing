@@ -1,24 +1,23 @@
 package ske.part.partsregister.interfaces.rest.test;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 @Path("/hello")
-@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
 public class HelloWorldResource {
 
     private final TestService testService;
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Inject
     public HelloWorldResource(TestService testService) {
         this.testService = testService;
     }
-
-    private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     // localhost:8080/rest/hello
     @GET

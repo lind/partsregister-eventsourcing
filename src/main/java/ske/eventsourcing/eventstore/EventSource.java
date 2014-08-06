@@ -1,8 +1,8 @@
 package ske.eventsourcing.eventstore;
 
-import ske.eventsourcing.event.Event;
-
 import java.util.List;
+
+import ske.eventsourcing.event.Event;
 
 /**
  * Kilde til event (hendelser). Hver event source har sin egen rekke med event som er lagret i event store. Eventene

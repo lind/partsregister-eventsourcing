@@ -1,15 +1,15 @@
 package ske.eventsourcing.util;
 
+import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.assertThat;
+
+import java.lang.reflect.Method;
+
 import org.junit.Test;
 import ske.eventsourcing.domain.SimpleAggregateRoot;
 import ske.eventsourcing.event.DomainEvent;
 import ske.eventsourcing.eventstore.EventSourceIdentifier;
 import ske.eventsourcing.eventstore.StringEventSourceIdentifier;
-
-import java.lang.reflect.Method;
-
-import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.assertThat;
 
 public class ReflectionUtilsTest {
 
@@ -61,6 +61,5 @@ public class ReflectionUtilsTest {
             return fornavn;
         }
     }
-
 
 }

@@ -1,14 +1,14 @@
 package ske.part.partsregister.domain.part;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
+import java.util.List;
+
 import com.google.common.collect.Lists;
 import org.junit.Test;
 import ske.eventsourcing.event.DomainEvent;
 import ske.eventsourcing.eventstore.StringEventSourceIdentifier;
-
-import java.util.List;
-
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
 
 public class PartTest {
 
@@ -44,6 +44,5 @@ public class PartTest {
         assertThat(part.getUnsavedEvents().size(), is(0));
 
     }
-
 
 }

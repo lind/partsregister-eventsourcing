@@ -1,10 +1,10 @@
 package ske.eventsourcing.domain;
 
+import java.lang.reflect.Method;
+
 import com.google.common.base.Objects;
 import com.google.common.base.Preconditions;
 import ske.eventsourcing.util.ReflectionUtils;
-
-import java.lang.reflect.Method;
 
 /**
  * Container for event-method pairs in a annotated aggregate root.
@@ -22,7 +22,7 @@ public class EventHandlerMethod {
     }
 
     public void handleEvent(Object event) {
-        ReflectionUtils.invokeMethod(method, target, new Object[]{event});
+        ReflectionUtils.invokeMethod(method, target, event);
     }
 
     @Override

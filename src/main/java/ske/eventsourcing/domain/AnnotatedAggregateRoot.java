@@ -1,5 +1,8 @@
 package ske.eventsourcing.domain;
 
+import java.lang.reflect.Method;
+import java.util.Map;
+
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Maps;
 import org.slf4j.Logger;
@@ -7,9 +10,6 @@ import org.slf4j.LoggerFactory;
 import ske.eventsourcing.event.Event;
 import ske.eventsourcing.event.EventHandler;
 import ske.eventsourcing.eventstore.EventSourceIdentifier;
-
-import java.lang.reflect.Method;
-import java.util.Map;
 
 /**
  * Base class for aggregate roots with annotated handler methods.
@@ -29,7 +29,8 @@ public class AnnotatedAggregateRoot extends AggregateRoot {
         logger.debug("handle event: {}", event);
         EventHandlerMethod handlerMethod = eventHandlerMethodMap.get(event.getClass());
 
-        Preconditions.checkNotNull(handlerMethod, "Class %s has no handle method for event: %s", this.getClass().getSimpleName(), event.getClass().getSimpleName());
+        Preconditions.checkNotNull(handlerMethod, "Class %s has no handle method for event: %s",
+                this.getClass().getSimpleName(), event.getClass().getSimpleName());
         handlerMethod.handleEvent(event);
     }
 

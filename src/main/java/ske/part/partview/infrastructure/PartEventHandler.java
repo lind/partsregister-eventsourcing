@@ -1,9 +1,10 @@
-package ske.part.partsregister.interfaces;
+package ske.part.partview.infrastructure;
 
 import com.google.common.eventbus.Subscribe;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ske.part.partsregister.domain.part.PersonOpprettetEvent;
+import ske.part.partview.domain.PartViewModel;
 
 public class PartEventHandler {
 
@@ -17,6 +18,7 @@ public class PartEventHandler {
     @Subscribe
     public void handlePersonOpprettetEvent(PersonOpprettetEvent event) {
         logger.debug("handlePersonOpprettetEvent - Fornavn: {}", event.getFornavn());
-        viewStore.opprettPart(new PartViewModel(event.getEventSourceIdentifier().asString(), event.getFornavn(), event.getEtternavn()));
+        viewStore.opprettPart(new PartViewModel(event.getEventSourceIdentifier().asString(), event.getFornavn(),
+                event.getEtternavn()));
     }
 }

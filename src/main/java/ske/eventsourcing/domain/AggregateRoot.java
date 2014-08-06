@@ -1,14 +1,14 @@
 package ske.eventsourcing.domain;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ske.eventsourcing.event.DomainEvent;
 import ske.eventsourcing.event.Event;
 import ske.eventsourcing.eventstore.EventSource;
 import ske.eventsourcing.eventstore.EventSourceIdentifier;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public abstract class AggregateRoot implements EventSource {
 

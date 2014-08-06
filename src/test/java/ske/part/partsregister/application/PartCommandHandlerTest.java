@@ -1,5 +1,10 @@
 package ske.part.partsregister.application;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
+import java.util.List;
+
 import org.junit.Test;
 import ske.eventsourcing.event.Event;
 import ske.eventsourcing.eventstore.EventSourceIdentifier;
@@ -10,11 +15,6 @@ import ske.part.partsregister.domain.part.EtternavnEndretEvent;
 import ske.part.partsregister.domain.part.FornavnEndretEvent;
 import ske.part.partsregister.domain.part.Part;
 import ske.part.partsregister.domain.part.PersonOpprettetEvent;
-
-import java.util.List;
-
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
 
 public class PartCommandHandlerTest {
 
@@ -39,7 +39,6 @@ public class PartCommandHandlerTest {
     @Test
     public void shouldEndreNavn() {
         EventStore eventStore = new InMemoryEventStore();
-
 
         PartCommandHandler partCommandHandler = new PartCommandHandler(eventStore, null);
         EventSourceIdentifier id = new StringEventSourceIdentifier("12");

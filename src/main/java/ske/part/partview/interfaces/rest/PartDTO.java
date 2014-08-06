@@ -1,4 +1,4 @@
-package ske.part.partsregister.interfaces;
+package ske.part.partview.interfaces.rest;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -18,6 +18,7 @@ public class PartDTO {
     public String getId() {
         return id;
     }
+
     @JsonProperty
     public String getEtternavn() {
         return etternavn;

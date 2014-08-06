@@ -5,15 +5,15 @@ import ske.eventsourcing.eventstore.EventSourceIdentifier;
 
 public class EtternavnEndretEvent extends DomainEvent {
 
-	private final String etternavn;
+    private final String etternavn;
 
-	public EtternavnEndretEvent(EventSourceIdentifier id, String etternavn) {
-		super(id);
-		this.etternavn = etternavn;
-	}
+    public EtternavnEndretEvent(EventSourceIdentifier id, String etternavn) {
+        super(id);
+        this.etternavn = etternavn;
+    }
 
-	public String getEtternavn() {
-		return etternavn;
-	}
+    public String getEtternavn() {
+        return etternavn;
+    }
 
 }

@@ -1,10 +1,10 @@
 package ske.eventsourcing.util;
 
-import com.google.common.base.Preconditions;
-
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
+
+import com.google.common.base.Preconditions;
 
 public class ReflectionUtils {
 

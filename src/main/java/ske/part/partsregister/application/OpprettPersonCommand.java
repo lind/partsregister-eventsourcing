@@ -11,7 +11,8 @@ public class OpprettPersonCommand {
     private String etternavn;
 
     @JsonCreator
-    public OpprettPersonCommand(@JsonProperty("id") String id, @JsonProperty("fornavn") String fornavn, @JsonProperty("etternavn") String etternavn) {
+    public OpprettPersonCommand(@JsonProperty("id") String id, @JsonProperty("fornavn") String fornavn,
+            @JsonProperty("etternavn") String etternavn) {
         this.id = new StringEventSourceIdentifier(id);
         this.fornavn = fornavn;
         this.etternavn = etternavn;

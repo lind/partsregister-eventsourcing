@@ -5,20 +5,20 @@ import ske.eventsourcing.eventstore.EventSourceIdentifier;
 
 public class DummyChangedAgeEvent extends DomainEvent {
 
-	public final int age;
+    public final int age;
 
-	public DummyChangedAgeEvent(EventSourceIdentifier id, int age) {
-		super(id);
-		this.age = age;
-	}
+    public DummyChangedAgeEvent(EventSourceIdentifier id, int age) {
+        super(id);
+        this.age = age;
+    }
 
-	public int getAge() {
-		return age;
-	}
+    public int getAge() {
+        return age;
+    }
 
-	@Override
-	public String toString() {
-		return "DummyChangedNameEvent [name=" + age + ", getEventCreated()=" + getEventCreated().toString() + "]";
-	}
+    @Override
+    public String toString() {
+        return "DummyChangedNameEvent [name=" + age + ", getEventCreated()=" + getEventCreated().toString() + "]";
+    }
 
 }

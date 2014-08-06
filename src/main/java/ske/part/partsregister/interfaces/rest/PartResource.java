@@ -1,18 +1,18 @@
 package ske.part.partsregister.interfaces.rest;
 
+import javax.inject.Inject;
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
+
 import com.google.common.base.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ske.part.partsregister.application.OpprettPersonCommand;
 import ske.part.partsregister.application.PartCommandHandler;
 
-import javax.inject.Inject;
-import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
-
 @Path("/part")
 @Consumes(MediaType.APPLICATION_JSON)
-@Produces({MediaType.APPLICATION_JSON, MediaType.TEXT_PLAIN})
+@Produces({ MediaType.APPLICATION_JSON, MediaType.TEXT_PLAIN })
 public class PartResource {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -23,7 +23,6 @@ public class PartResource {
         this.commandHandler = commandHandler;
     }
 
-
     @Path("/hei")
     @GET
     public String hei() {
@@ -32,7 +31,7 @@ public class PartResource {
 
     @Path("/test")
     @POST
-//    @Timed  // metrics
+    //    @Timed  // metrics
     public void test(String id) {
         System.out.println("/part/test.test() - partId:");
         logger.debug("/part/test.test() - partId: {}", id);

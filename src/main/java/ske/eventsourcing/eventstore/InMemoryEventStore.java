@@ -1,15 +1,15 @@
 package ske.eventsourcing.eventstore;
 
-import com.google.common.base.Objects;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import ske.eventsourcing.event.Event;
+import static com.google.common.collect.Maps.newHashMap;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import static com.google.common.collect.Maps.newHashMap;
+import com.google.common.base.Objects;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import ske.eventsourcing.event.Event;
 
 /**
  * InMemory storage of events. <b> Events are stored in a List in a Map where the type of eventsource and the id are the
@@ -49,7 +49,8 @@ public class InMemoryEventStore extends BaseEventStore {
 
         int numberOfStoredEvents = events.size();
         List<Event> eventsToSave = eventsource.getUnsavedEvents();
-        logger.debug("save() - number of events on {} before save: {}", eventsource.getEventSourceIdentifier().asString(),
+        logger.debug("save() - number of events on {} before save: {}",
+                eventsource.getEventSourceIdentifier().asString(),
                 numberOfStoredEvents);
         for (Event event : eventsToSave) {
             event.setSequenceNumber(++numberOfStoredEvents);
@@ -88,25 +89,33 @@ public class InMemoryEventStore extends BaseEventStore {
 
         @Override
         public boolean equals(Object obj) {
-            if (this == obj)
+            if (this == obj) {
                 return true;
-            if (obj == null)
+            }
+            if (obj == null) {
                 return false;
-            if (!(obj instanceof EventSourceKey))
+            }
+            if (!(obj instanceof EventSourceKey)) {
                 return false;
+            }
             EventSourceKey other = (EventSourceKey) obj;
-            if (!getOuterType().equals(other.getOuterType()))
+            if (!getOuterType().equals(other.getOuterType())) {
                 return false;
+            }
             if (id == null) {
-                if (other.id != null)
+                if (other.id != null) {
                     return false;
-            } else if (!id.asString().equals(other.id.asString()))
+                }
+            } else if (!id.asString().equals(other.id.asString())) {
                 return false;
+            }
             if (type == null) {
-                if (other.type != null)
+                if (other.type != null) {
                     return false;
-            } else if (!type.equals(other.type))
+                }
+            } else if (!type.equals(other.type)) {
                 return false;
+            }
             return true;
         }
 

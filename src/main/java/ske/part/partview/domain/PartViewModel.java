@@ -1,4 +1,4 @@
-package ske.part.partsregister.interfaces;
+package ske.part.partview.domain;
 
 public class PartViewModel {
 
@@ -15,6 +15,7 @@ public class PartViewModel {
     public String getId() {
         return id;
     }
+
     public String getEtternavn() {
         return etternavn;
     }

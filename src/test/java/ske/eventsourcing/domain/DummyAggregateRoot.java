@@ -7,64 +7,65 @@ import ske.eventsourcing.eventstore.StringEventSourceIdentifier;
 
 public class DummyAggregateRoot extends AnnotatedAggregateRoot {
 
-	private String address;
-	private int age;
-	private String name;
+    private String address;
+    private int age;
+    private String name;
 
-	public DummyAggregateRoot(EventSourceIdentifier id) {
-		super(id);
-	}
+    public DummyAggregateRoot(EventSourceIdentifier id) {
+        super(id);
+    }
 
-	public DummyAggregateRoot(StringEventSourceIdentifier id, String name) {
-		this(id);
-		apply(new DummyAggregateCreatedEvent(id, name));
-	}
+    public DummyAggregateRoot(StringEventSourceIdentifier id, String name) {
+        this(id);
+        apply(new DummyAggregateCreatedEvent(id, name));
+    }
 
-	public void changeAddress(String address) {
-		apply(new DummyChangeAddressEvent(getId(), address));
-	}
+    public void changeAddress(String address) {
+        apply(new DummyChangeAddressEvent(getId(), address));
+    }
 
-	public void changeAge(int age) {
-		apply(new DummyChangedAgeEvent(getId(), age));
-	}
+    public void changeAge(int age) {
+        apply(new DummyChangedAgeEvent(getId(), age));
+    }
 
-	public void changeName(String name) {
-		apply(new DummyChangedNameEvent(getId(), name));
-	}
+    public void changeName(String name) {
+        apply(new DummyChangedNameEvent(getId(), name));
+    }
 
-	// Event handlers
-
-    @EventHandler
-	public void createEvent(DummyAggregateCreatedEvent event) {
-		this.name = event.getName();
-	}
+    // Event handlers
 
     @EventHandler
-	public void handleChangeAddressEvent(DummyChangeAddressEvent event) {
-		this.address = event.getAddress();
-	}
+    public void createEvent(DummyAggregateCreatedEvent event) {
+        this.name = event.getName();
+    }
 
     @EventHandler
-	public void handleChangedAge(DummyChangedAgeEvent event) {
-		this.age = event.getAge();
-	}
+    public void handleChangeAddressEvent(DummyChangeAddressEvent event) {
+        this.address = event.getAddress();
+    }
 
     @EventHandler
-	public void changedNameEvent(DummyChangedNameEvent event) {
-		this.name = event.getName();
-	}
+    public void handleChangedAge(DummyChangedAgeEvent event) {
+        this.age = event.getAge();
+    }
 
-	public String getName() {
-		return name;
-	}
+    @EventHandler
+    public void changedNameEvent(DummyChangedNameEvent event) {
+        this.name = event.getName();
+    }
 
-	public String getAddress() {
-		return address;
-	}
+    public String getName() {
+        return name;
+    }
 
-	@Override
-	public String toString() {
-		return Objects.toStringHelper(this).add("address", address).add("age", age).add("name", name).add("id", getEventSourceIdentifier()).toString();
-	}
+    public String getAddress() {
+        return address;
+    }
+
+    @Override
+    public String toString() {
+        return Objects.toStringHelper(this).add("address", address).add("age", age).add("name", name)
+                .add("id", getEventSourceIdentifier()).toString();
+    }
 
 }

@@ -1,8 +1,8 @@
 package ske.eventsourcing.eventstore;
 
-import ske.eventsourcing.event.Event;
-
 import java.util.List;
+
+import ske.eventsourcing.event.Event;
 
 public interface EventStore {
 
