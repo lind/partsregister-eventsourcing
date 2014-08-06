@@ -1,7 +1,5 @@
 package ske.part.partview.interfaces.rest;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 public class PartDTO {
 
     private String id;
@@ -14,17 +12,14 @@ public class PartDTO {
         this.etternavn = etternavn;
     }
 
-    @JsonProperty
     public String getId() {
         return id;
     }
 
-    @JsonProperty
     public String getEtternavn() {
         return etternavn;
     }
 
-    @JsonProperty
     public String getFornavn() {
         return fornavn;
     }

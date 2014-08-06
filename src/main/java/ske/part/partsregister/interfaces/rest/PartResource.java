@@ -4,7 +4,6 @@ import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
-import com.google.common.base.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ske.part.partsregister.application.OpprettPersonCommand;
@@ -36,16 +35,24 @@ public class PartResource {
 
     }
 
+    @Path("/pojo")
+    @POST
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public SimplePojo simplePojoJSON(SimplePojo simplePojo) {
+        logger.debug("/part/pojo - navn {}, alder {}", simplePojo.getNavn(), simplePojo.getAlder());
+        return new SimplePojo("Kalle", 99);
+    }
+
+
     // ?? {"id":"3", "fornavn":"Nisse", "etternavn":"Danielsson"}
 
     @POST
-    public void opprettPart(Optional<OpprettPersonCommand> command) {
-        System.out.println("/part.opprettPart() - partId:");
-        logger.debug("/part.opprettPart() - partId: {}",
-                command.isPresent() ? command.get().getId() : "-- Command=null --");
-        System.out.println("/part.opprettPart() - partId:");
+    @Consumes(MediaType.APPLICATION_JSON)
+    public void opprettPart(OpprettPersonCommand command) {
+        logger.debug("/part.opprettPart() - partId: {}", command.getId());
 
-        commandHandler.handle(command.orNull());
+        commandHandler.handle(command);
     }
 
 }

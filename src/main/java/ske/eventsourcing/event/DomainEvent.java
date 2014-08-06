@@ -43,7 +43,6 @@ public class DomainEvent implements Event {
     }
 
     public String toString() {
-        return Objects.toStringHelper(this).add("id", id.asString()).toString();
+        return Objects.toStringHelper(this).add("id", id != null ? id.asString() : "null").toString();
     }
-
 }

@@ -39,19 +39,17 @@
             <param-name>jersey.config.server.provider.packages</param-name>
             <param-value>ske.part.partsregister.interfaces.rest</param-value>
         </init-param>
+        <!-- Andre nyttige init param: jersey.config.server.provider.scanning.recursive   -->
         <init-param>
             <param-name>javax.ws.rs.Application</param-name>
             <param-value>ske.part.partsregister.infrastructure.bootstrap.PartsregisterApplication</param-value>
         </init-param>
-        <!-- Andre nyttige init param:
-        jersey.config.server.provider.scanning.recursive
-
-   -->
-        <!-- 		<init-param>
-                    <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
-                    <param-value>true</param-value>
-                </init-param>
-         -->
+<!--
+        <init-param>
+            <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+            <param-value>true</param-value>
+        </init-param>
+-->
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>

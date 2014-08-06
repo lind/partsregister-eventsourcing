@@ -16,17 +16,12 @@
         <guava.version>17.0</guava.version>
         <joda-time.version>2.3</joda-time.version>
         <jersey.version>2.11</jersey.version>
-        <fasterxml.version>2.4.1</fasterxml.version>
+        <jetty.version>9.2.2.v20140723</jetty.version>
+
+        <fasterxml.version>2.4.0</fasterxml.version>
     </properties>
 
     <dependencies>
-        <!--
-                <dependency>
-                    <groupId>io.dropwizard</groupId>
-                    <artifactId>dropwizard-core</artifactId>
-                    <version>${dropwizard.version}</version>
-                </dependency>
-        -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -35,7 +30,7 @@
         </dependency>
 
         <!--
-Lagt til disse under. (ikke hibernate validator)
+Lagt til disse fra dropwizard. (ikke hibernate validator)
         -->
         <dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
@@ -44,10 +39,27 @@ Lagt til disse under. (ikke hibernate validator)
         </dependency>
 
         <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-moxy</artifactId>
+            <version>${jersey.version}</version>
+        </dependency><!--
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${fasterxml.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
             <version>${fasterxml.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${fasterxml.version}</version>
+        </dependency>
+-->
+
         <!-- hit -->
 
         <dependency>
@@ -64,15 +76,6 @@ Lagt til disse under. (ikke hibernate validator)
             <type>jar</type>
             <scope>compile</scope>
         </dependency>
-<!--
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>${slf4j.version}</version>
-            <type>jar</type>
-            <scope>compile</scope>
-        </dependency>
--->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-core</artifactId>
@@ -113,6 +116,17 @@ Lagt til disse under. (ikke hibernate validator)
             <scope>test</scope>
         </dependency>
         -->
+
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-servlet</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
     </dependencies>
     <reporting>
         <plugins>
