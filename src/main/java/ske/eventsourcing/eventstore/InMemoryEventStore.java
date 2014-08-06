@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import javax.inject.Singleton;
+
 import com.google.common.base.Objects;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +17,7 @@ import ske.eventsourcing.event.Event;
  * InMemory storage of events. <b> Events are stored in a List in a Map where the type of eventsource and the id are the
  * key.
  */
+@Singleton
 public class InMemoryEventStore extends BaseEventStore {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 

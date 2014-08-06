@@ -15,8 +15,14 @@ public class PartsregisterApplication extends ResourceConfig {
         register(new PartsregisterBinder());
         packages(true, "ske.part.partsregister.interfaces.rest");
 
-        register(MoxyJsonFeature.class);
+
+
+//        register(MoxyJsonFeature.class); // trenges ikke... Hvorfor??
+
+
 //        registerInstances(new JsonMoxyConfigurationContextResolver());
+
+
         // Hvordan sett opp og registrere handlere?
 //        partViewStore = new PartViewStore();
 //        partEventHandler = new PartEventHandler(partViewStore);
@@ -24,7 +30,7 @@ public class PartsregisterApplication extends ResourceConfig {
 
     }
 
-    /**
+    /** Trenges ikke
     @Provider
     final static class JsonMoxyConfigurationContextResolver implements ContextResolver<MoxyJsonConfig> {
 

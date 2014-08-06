@@ -9,7 +9,9 @@ import org.slf4j.LoggerFactory;
 import ske.eventsourcing.event.Event;
 import ske.eventsourcing.eventstore.EventSourceIdentifier;
 import ske.eventsourcing.eventstore.EventStore;
+import ske.eventsourcing.eventstore.StringEventSourceIdentifier;
 import ske.part.partsregister.domain.part.Part;
+import ske.part.partsregister.domain.part.PersonOpprettetEvent;
 
 public class PartCommandHandler {
 
@@ -24,6 +26,9 @@ public class PartCommandHandler {
         this.eventStore = eventStore;
     }
 
+    public void test() {
+        eventBus.post(new PersonOpprettetEvent(new StringEventSourceIdentifier("2"), "kalle", "Tjo"));
+    }
     public EventSourceIdentifier handle(OpprettPersonCommand command) {
         logger.debug("handle(OpprettPersonCommand) - Fornavn: {} ", command.getFornavn());
 

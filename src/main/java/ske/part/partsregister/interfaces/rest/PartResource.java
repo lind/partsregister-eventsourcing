@@ -41,6 +41,7 @@ public class PartResource {
     @Consumes(MediaType.APPLICATION_JSON)
     public SimplePojo simplePojoJSON(SimplePojo simplePojo) {
         logger.debug("/part/pojo - navn {}, alder {}", simplePojo.getNavn(), simplePojo.getAlder());
+        commandHandler.test();
         return new SimplePojo("Kalle", 99);
     }
 
