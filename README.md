@@ -33,10 +33,10 @@ Start Jetty med
 mvn jetty:run
 ```
 
-localhost:8000
+localhost:8080
 
 ## TODO
-* fiks logback (uten Dropwizard)
+* _fiks logback (uten Dropwizard)_ -> enkel konfig til konsoll
 * Jobbe mer med REST APIet. Få til Jersys linker bl.a.
 * Lage [Text Fixtures](https://github.com/junit-team/junit/wiki/Test-fixtures) for enklere å teste Command - EventSource - state til aggregatet. 
     * Given - denne event historikken 

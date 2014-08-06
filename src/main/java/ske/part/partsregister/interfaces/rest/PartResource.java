@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import ske.part.partsregister.application.OpprettPersonCommand;
 import ske.part.partsregister.application.PartCommandHandler;
 
-@Path("/part")
+@Path("/parter")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces({ MediaType.APPLICATION_JSON, MediaType.TEXT_PLAIN })
 public class PartResource {
@@ -31,12 +31,12 @@ public class PartResource {
 
     @Path("/test")
     @POST
-    //    @Timed  // metrics
     public void test(String id) {
-        System.out.println("/part/test.test() - partId:");
         logger.debug("/part/test.test() - partId: {}", id);
 
     }
+
+    // ?? {"id":"3", "fornavn":"Nisse", "etternavn":"Danielsson"}
 
     @POST
     public void opprettPart(Optional<OpprettPersonCommand> command) {
