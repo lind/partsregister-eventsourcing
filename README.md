@@ -1,7 +1,28 @@
-partsregister-eventsourcing
-===========================
+# partsregister-eventsourcing
 
 Test av en enkel eventsource versjon av et Partsregister.
+
+## Oppbygging
+* Et tydelig skille mellom lese og skrivemodell.
+* Skrivemodellen skal være en eventstore.
+* Eventer skal publiseres slik at nye lesemodeller kan lages efter behov.
+* Publisering kan gjøres med en køløsning, ala Vert.x, feeds eller en distribuert NoSQL som Hadoop.
+* Lesemodellen kan i starten finnes sammen med skrivemodellen og flyttes til annen JVM/container etter behov.
+* Snapshot kan legges på efter behov.
+
+
+## API
+RESTful API som også følger HATEOAS
+
+/parter
+/parter/opprett
+/parter/{id}
+	/flytte
+	/… kommandoer
+	/eventer (også som feeds?)
+
+Hver ressurs har underressurser med kommandoer og eventer. God strategi?
+Kommandoer passer ikke så bra sammen med ressurs og CRUD.
 
 Bruker Dropwizard. Bygg en Fat JAR med 
 ```
