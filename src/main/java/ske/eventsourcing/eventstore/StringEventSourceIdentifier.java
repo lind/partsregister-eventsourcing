@@ -12,4 +12,26 @@ public class StringEventSourceIdentifier implements EventSourceIdentifier {
         return identifier;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+
+        StringEventSourceIdentifier that = (StringEventSourceIdentifier) o;
+
+        if (identifier != null ? !identifier.equals(that.identifier) : that.identifier != null) {
+            return false;
+        }
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return identifier != null ? identifier.hashCode() : 0;
+    }
 }

@@ -17,4 +17,5 @@ public interface EventStore {
 
     public <T extends EventSource> List<Event> getEventsForIdentifier(Class<T> type, EventSourceIdentifier id);
 
+    <T extends EventSource> boolean exists(Class<T> type, EventSourceIdentifier id);
 }

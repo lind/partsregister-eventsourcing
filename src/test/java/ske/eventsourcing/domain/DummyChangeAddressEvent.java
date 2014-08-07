@@ -1,5 +1,6 @@
 package ske.eventsourcing.domain;
 
+import com.google.common.base.Objects;
 import ske.eventsourcing.event.DomainEvent;
 import ske.eventsourcing.eventstore.EventSourceIdentifier;
 
@@ -18,8 +19,7 @@ public class DummyChangeAddressEvent extends DomainEvent {
 
     @Override
     public String toString() {
-        return "DummyChangeAddressEvent [address=" + address + ", getEventCreated()=" + getEventCreated().toString()
-                + "]";
+        return Objects.toStringHelper(this).add("address", address).toString();
     }
 
 }

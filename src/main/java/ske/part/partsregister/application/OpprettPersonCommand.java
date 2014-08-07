@@ -1,11 +1,11 @@
 package ske.part.partsregister.application;
 
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import ske.eventsourcing.eventstore.EventSourceIdentifier;
 import ske.eventsourcing.eventstore.StringEventSourceIdentifier;
 
-@XmlRootElement
 public class OpprettPersonCommand {
     private EventSourceIdentifier id;
     private String fornavn;

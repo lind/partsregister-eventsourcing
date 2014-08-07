@@ -1,14 +1,21 @@
 package ske.part.partview.interfaces.rest;
 
-public class PartDTO {
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
+@XmlRootElement
+public class PartViewDTO {
+
+    @XmlElement()
     private String id;
-    private String fornavn;
+    @XmlElement()
     private String etternavn;
 
-    public PartDTO(String id, String fornavn, String etternavn) {
+    public PartViewDTO() {
+    }
+
+    public PartViewDTO(String id, String etternavn) {
         this.id = id;
-        this.fornavn = fornavn;
         this.etternavn = etternavn;
     }
 
@@ -20,7 +27,4 @@ public class PartDTO {
         return etternavn;
     }
 
-    public String getFornavn() {
-        return fornavn;
-    }
 }

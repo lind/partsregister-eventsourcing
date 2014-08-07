@@ -3,12 +3,10 @@ package ske.part.partview.domain;
 public class PartViewModel {
 
     private String id;
-    private String fornavn;
     private String etternavn;
 
-    public PartViewModel(String id, String fornavn, String etternavn) {
+    public PartViewModel(String id, String etternavn) {
         this.id = id;
-        this.fornavn = fornavn;
         this.etternavn = etternavn;
     }
 
@@ -20,8 +18,7 @@ public class PartViewModel {
         return etternavn;
     }
 
-    public String getFornavn() {
-        return fornavn;
+    public void setEtternavn(String etternavn) {
+        this.etternavn = etternavn;
     }
-
 }

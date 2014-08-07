@@ -24,8 +24,9 @@ RESTful API som også følger [HATEOAS](http://en.wikipedia.org/wiki/HATEOAS)
 	/… kommandoer
 	/eventer (også som feeds?)
 
-Hver ressurs har underressurser med kommandoer og eventer. **God strategi?**
-Kommandoer passer ikke så bra sammen med ressurs og CRUD.
+* Hver ressurs har underressurser med kommandoer og eventer. **God strategi?** Kommandoer passer ikke så bra sammen med ressurs og CRUD.
+    * Eller kommandoer som "rot" ressurser? /navneendring /flytteendring etc. 
+* Bruke [snake_case](http://en.wikipedia.org/wiki/Snake_case) i REST API?
 
 ## Bruk
 Start Jetty med 
@@ -56,3 +57,12 @@ Og videre...
 * Så klart en mer rik funksjonalitet i domenet (part)
 * Versjonering av eventer (med oversettere slik at handler metodene kun trenger å håndtere siste versjonen)
 * Snapshotting av aggregate state (med [Memento pattern](http://en.wikipedia.org/wiki/Memento_pattern)) 
+
+
+## Erfaringer
+
+### JSON
+¤$%%&
+Bruk Moxy for JSON - Java. (POJO mapper trenger ikke spesifiseres i init til servleten...) 
+**OBS** DTO som JSON parses til må annoteres med @XmlRootElement og @XmlElement ..
+**OBS** DTO som JSON parses til må ha en tom konstruktør ellers en 500 Internal server error uten god forklaring i loggen... 

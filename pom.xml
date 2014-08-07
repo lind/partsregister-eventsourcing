@@ -9,7 +9,6 @@
     <url>http://maven.apache.org</url>
 
     <properties>
-        <dropwizard.version>0.7.1</dropwizard.version>
         <junit.version>4.8.2</junit.version>
         <slf4j.version>1.7.7</slf4j.version>
         <logback.version>1.1.2</logback.version>
@@ -17,6 +16,7 @@
         <joda-time.version>2.3</joda-time.version>
         <jersey.version>2.11</jersey.version>
         <jetty.version>9.2.2.v20140723</jetty.version>
+        <gson.version>2.2.4</gson.version>
 
         <fasterxml.version>2.4.0</fasterxml.version>
     </properties>
@@ -29,9 +29,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!--
-Lagt til disse fra dropwizard. (ikke hibernate validator)
-        -->
+        <!-- Jersey -->
         <dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
             <artifactId>jersey-container-servlet-core</artifactId>
@@ -42,25 +40,9 @@ Lagt til disse fra dropwizard. (ikke hibernate validator)
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-moxy</artifactId>
             <version>${jersey.version}</version>
-        </dependency><!--
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-core</artifactId>
-            <version>${fasterxml.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-annotations</artifactId>
-            <version>${fasterxml.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>${fasterxml.version}</version>
-        </dependency>
--->
 
-        <!-- hit -->
+        <!-- Joda -->
 
         <dependency>
             <groupId>joda-time</groupId>
@@ -108,7 +90,12 @@ Lagt til disse fra dropwizard. (ikke hibernate validator)
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
         </dependency>
-        <!--
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gson.version}</version>
+        </dependency>
+        <!-- Using HK2
         <dependency>
             <groupId>com.google.inject</groupId>
             <artifactId>guice</artifactId>
@@ -117,6 +104,7 @@ Lagt til disse fra dropwizard. (ikke hibernate validator)
         </dependency>
         -->
 
+        <!-- Jetty for TestServer -->
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-servlet</artifactId>

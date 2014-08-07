@@ -1,29 +1,23 @@
 package ske.eventsourcing.event;
 
 import com.google.common.base.Objects;
-import org.joda.time.DateTime;
 import ske.eventsourcing.eventstore.EventSourceIdentifier;
 
 public class DomainEvent implements Event {
 
-    private final DateTime eventCreated;
+    //    private final DateTime eventCreated;
     private EventSourceIdentifier id;
     private long sequenceNumber;
 
-    // TODO: remove?
-    //	public DomainEvent() {
-    //		this.eventCreated = new DateTime();
-    //	}
-
     public DomainEvent(EventSourceIdentifier id) {
         this.id = id;
-        this.eventCreated = new DateTime();
+        //        this.eventCreated = new DateTime();
     }
 
-    @Override
-    public DateTime getEventCreated() {
-        return eventCreated;
-    }
+    //    @Override
+    //    public DateTime getEventCreated() {
+    //        return eventCreated;
+    //    }
 
     public EventSourceIdentifier getEventSourceIdentifier() {
         return id;
