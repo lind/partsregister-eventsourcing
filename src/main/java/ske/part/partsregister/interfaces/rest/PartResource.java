@@ -29,29 +29,6 @@ public class PartResource {
         this.commandHandler = commandHandler;
     }
 
-    @Path("/hei")
-    @GET
-    public String hei() {
-        return "hei";
-    }
-
-    @Path("/test")
-    @POST
-    public void test(String id) {
-        logger.debug("/part/test.test() - partId: {}", id);
-
-    }
-
-    @Path("/pojo")
-    @POST
-    @Produces(MediaType.APPLICATION_JSON)
-    @Consumes(MediaType.APPLICATION_JSON)
-    public SimplePojo simplePojoJSON(SimplePojo simplePojo) {
-        logger.debug("/part/pojo - navn {}, alder {}", simplePojo.getNavn(), simplePojo.getAlder());
-        commandHandler.test();
-        return new SimplePojo("Kalle", 99);
-    }
-
     // -----------------------------------------------------------------------------------------------------
     // API
     // -----------------------------------------------------------------------------------------------------
@@ -88,6 +65,32 @@ public class PartResource {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
         return gson.toJson(events);
+    }
+
+    // -----------------------------------------------------------------------------------------------------
+    // Test
+    // -----------------------------------------------------------------------------------------------------
+
+    @Path("/hei")
+    @GET
+    public String hei() {
+        return "hei";
+    }
+
+    @Path("/test")
+    @POST
+    public void test(String id) {
+        logger.debug("/part/test.test() - partId: {}", id);
+
+    }
+
+    @Path("/pojo")
+    @POST
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public SimplePojo simplePojoJSON(SimplePojo simplePojo) {
+        logger.debug("/part/pojo - navn {}, alder {}", simplePojo.getNavn(), simplePojo.getAlder());
+        return new SimplePojo("Kalle", 99);
     }
 
 }

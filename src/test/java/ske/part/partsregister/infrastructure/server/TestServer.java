@@ -16,7 +16,7 @@ public class TestServer {
         server.setHandler(context);
 
         ServletHolder jerseyServlet = context
-                .addServlet(org.glassfish.jersey.servlet.ServletContainer.class, "/webapi/*");
+                .addServlet(org.glassfish.jersey.servlet.ServletContainer.class, "/rest/*");
         jerseyServlet.setInitOrder(1);
         jerseyServlet
                 .setInitParameter("jersey.config.server.provider.packages", "ske.part.partsregister.interfaces.rest");

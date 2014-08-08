@@ -11,6 +11,7 @@ public class PartViewDTO {
     @XmlElement()
     private String etternavn;
 
+    // Moxy trenger denne...
     public PartViewDTO() {
     }
 

@@ -35,15 +35,18 @@
             <artifactId>jersey-container-servlet-core</artifactId>
             <version>${jersey.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-server</artifactId>
+            <version>${jersey.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-moxy</artifactId>
             <version>${jersey.version}</version>
         </dependency>
 
-        <!-- Joda -->
-
+        <!-- Joda Time-->
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
@@ -77,23 +80,10 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Jersey dependencies -->
-        <dependency>
-            <groupId>org.glassfish.jersey.core</groupId>
-            <artifactId>jersey-server</artifactId>
-            <version>${jersey.version}</version>
-        </dependency>
-
-
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>${gson.version}</version>
         </dependency>
         <!-- Using HK2
         <dependency>
@@ -103,6 +93,13 @@
             <scope>test</scope>
         </dependency>
         -->
+
+        <!-- GSON for serializing JSON for testing -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gson.version}</version>
+        </dependency>
 
         <!-- Jetty for TestServer -->
         <dependency>
@@ -131,7 +128,6 @@
                 </reportSets>
                 <configuration>
                     <configLocation>src/main/resources/checkstyle/checkstyle-only-formatting.xml</configLocation>
-                    <!--                            <configLocation>checkstyle.xml</configLocation> -->
                     <encoding>UTF-8</encoding>
                     <consoleOutput>false</consoleOutput>
                     <failsOnError>false</failsOnError>

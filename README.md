@@ -8,11 +8,10 @@ som nå ligger i samme JVM og lytter på nye eventer over en EventBus
 ## Oppbygging
 * Et tydelig skille mellom lese og skrivemodell.
 * Skrivemodellen skal være en eventstore.
-* Eventer skal publiseres slik at nye lesemodeller kan lages efter behov.
+* Eventer skal publiseres slik at nye lesemodeller kan lages efter behov. (Guava sin [EventBus](https://code.google.com/p/guava-libraries/wiki/EventBusExplained) i eksemplet)
 * Publisering kan gjøres med en køløsning, ala Vert.x, feeds eller en distribuert NoSQL som Hadoop.
 * Lesemodellen kan i starten finnes sammen med skrivemodellen og flyttes til annen JVM/container etter behov.
-* Snapshot kan legges på efter behov.
-
+* Snapshot kan legges på efter behov for bedre ytelse.
 
 ## API
 RESTful API som også følger [HATEOAS](http://en.wikipedia.org/wiki/HATEOAS)
@@ -22,47 +21,51 @@ RESTful API som også følger [HATEOAS](http://en.wikipedia.org/wiki/HATEOAS)
 /parter/{id}
 	/flytte
 	/… kommandoer
-	/eventer (også som feeds?)
+	/eventer (også som feeds)
 
-* Hver ressurs har underressurser med kommandoer og eventer. **God strategi?** Kommandoer passer ikke så bra sammen med ressurs og CRUD.
-    * Eller kommandoer som "rot" ressurser? /navneendring /flytteendring etc. 
-* Bruke [snake_case](http://en.wikipedia.org/wiki/Snake_case) i REST API?
+* Hver ressurs har underressurser med kommandoer og eventer. _God strategi?_ -> Kommandoer passer ikke så bra sammen med ressurs og CRUD. Eller kommandoer som "rot" ressurser? /navneendring /flytteendring etc. 
 
 ## Bruk
+### Embedded server 
+Kjør `TestServer` -> `localhost:8180/rest/`
+
+### Jetty med mvn  
 Start Jetty med 
-```
+`
 mvn jetty:run
-```
+`
+-> `localhost:8080/rest/`
 
-localhost:8080
+### URLer
+_baseurl_/parter
+_baseurl_/parter/{id}/events
+_baseurl_/parter/{id}/endre_navn
+_baseurl_/navneendring
+_baseurl_/partview/{id}
 
-## TODO
-* _fiks logback (uten Dropwizard)_ -> enkel konfig til konsoll
+## Videre mulgheter
 * Jobbe mer med REST APIet. Få til Jersys linker bl.a.
+* Skille ut lesemodellen som lytter på eventer (i egen pakke nå: ske.part.partview)
+* Tilby et API for å hente eventer (som feeds? hente fra en gitt aggregate root og en sekvens id? hente alle med paging?)
+* Legge til en ny lesemodell som aggregerer informasjon som f.eks. statistikk - enkel [event monitorering](http://en.wikipedia.org/wiki/Event_monitoring) . Lytte på
+eventbussen og aggregere informasjon. REST API til dette. (/rest/partmart?)
+* Bruke [Vert.x sin EventBus](http://vertx.io/core_manual_java.html#the-event-bus) isteden for Guava slik at hanlere
+kan startes i flere JVMer. (Hvordan håndtere at Vert.x sin eventbus går ned? Hvordan håndtere at handlere går ned?)
+ API som henter eventer fra en gitt id eller tidspunkt, )
 * Lage [Text Fixtures](https://github.com/junit-team/junit/wiki/Test-fixtures) for enklere å teste Command - EventSource - state til aggregatet. 
     * Given - denne event historikken 
     * When - denne/disse kommandoer utføres
     * Then - skal tilstanden til aggregatet bli slik (og disse eventer skal bli generert med disse verdier)
-* Skille ut lesemodellen som lytter på eventer (først ut i egen pakke ske.part.partview) (/rest/partview?)
-* Tilby et API for å hente eventer (som feeds? hente fra en gitt aggregate root og en sekvens id? hente alle med paging?)
-* Legge til en ny lesemodell som aggregerer informasjon som f.eks. statistikk - enkelt ´Datavarehus´. Lytte på
-eventbussen og aggregere informasjon. REST API til dette. (/rest/partmart?)
-* Bruke [Vert.x sin EventBus](http://vertx.io/core_manual_java.html#the-event-bus) isteden for Guava slik at hanlere
-kan startes i flere JVMer. (Hvordan håndtere at Vert.x sin eventbus går ned? Hvordan håndtere at handlere går ned?
- API som henter eventer fra en gitt id eller tidspunkt, )
-* Bruke [Hadoop](http://hadoop.apache.org/) som persistering for eventstore og [Spark](http://spark.apache.org/) som ´Datavarehus´/eventanalyse.
 
-Og videre...
+**Kanskje det mest spennende for tiden:** 
 
-* Så klart en mer rik funksjonalitet i domenet (part)
+* Bruke [Hadoop](http://hadoop.apache.org/) som persistering for eventstore og [Spark](http://spark.apache.org/) for analyse/[Event monitorering](http://en.wikipedia.org/wiki/Event_monitoring)/[Complex event processing](http://en.wikipedia.org/wiki/Complex_event_processing).
+* Og evt. [Akka persistence](http://doc.akka.io/docs/akka/current/scala/persistence.html) som Aggregater med en [Journal plugin](http://akka.io/community/) 
+
+**Og videre...**
+
+* ...en mer rik funksjonalitet i domenet
 * Versjonering av eventer (med oversettere slik at handler metodene kun trenger å håndtere siste versjonen)
 * Snapshotting av aggregate state (med [Memento pattern](http://en.wikipedia.org/wiki/Memento_pattern)) 
 
 
-## Erfaringer
-
-### JSON
-¤$%%&
-Bruk Moxy for JSON - Java. (POJO mapper trenger ikke spesifiseres i init til servleten...) 
-**OBS** DTO som JSON parses til må annoteres med @XmlRootElement og @XmlElement ..
-**OBS** DTO som JSON parses til må ha en tom konstruktør ellers en 500 Internal server error uten god forklaring i loggen... 

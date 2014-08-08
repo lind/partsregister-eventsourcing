@@ -5,12 +5,9 @@ import static com.google.common.collect.Maps.newHashMap;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import javax.inject.Scope;
-import javax.inject.Singleton;
 
 import com.google.common.base.Objects;
 import com.google.common.base.Preconditions;
-import org.jvnet.hk2.annotations.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ske.eventsourcing.event.Event;
@@ -35,7 +32,9 @@ public class InMemoryEventStore extends BaseEventStore {
                 (null == events ? 0 : events.size()));
 
         Preconditions.checkState(null != events && events.size() != 0,
-                "Storage can't be empty when loading EventSource. Must create and store the EventSource first. Type: " + type + ", id: " + id.asString());
+                "Storage can't be empty when loading EventSource. Must create and store the EventSource first. Type: "
+                        + type + ", id: " + id.asString()
+        );
 
         T eventSource = createEventSource(type, id);
 

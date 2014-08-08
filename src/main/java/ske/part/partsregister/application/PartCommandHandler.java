@@ -2,7 +2,6 @@ package ske.part.partsregister.application;
 
 import java.util.List;
 import javax.inject.Inject;
-import javax.inject.Singleton;
 
 import com.google.common.base.Preconditions;
 import com.google.common.eventbus.EventBus;
@@ -13,25 +12,18 @@ import ske.eventsourcing.eventstore.EventSourceIdentifier;
 import ske.eventsourcing.eventstore.EventStore;
 import ske.eventsourcing.eventstore.StringEventSourceIdentifier;
 import ske.part.partsregister.domain.part.Part;
-import ske.part.partsregister.domain.part.PersonOpprettetEvent;
-import ske.part.partsregister.interfaces.rest.PartDTO;
 
 public class PartCommandHandler {
 
-    private Logger logger = LoggerFactory.getLogger(this.getClass());
-
     private final EventBus eventBus;
     private final EventStore eventStore;
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Inject
     public PartCommandHandler(EventStore eventStore, EventBus eventBus) {
         logger.debug("Created: EventStore obj id: {}", eventStore.toString());
         this.eventBus = eventBus;
         this.eventStore = eventStore;
-    }
-
-    public void test() {
-        eventBus.post(new PersonOpprettetEvent(new StringEventSourceIdentifier("2"), "kalle", "Tjo"));
     }
 
     public EventSourceIdentifier handle(OpprettPersonCommand command) {

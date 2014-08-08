@@ -9,9 +9,10 @@ public class SimplePojo {
     @XmlElement()
     private String navn;
 
-    @XmlElement(name="Alder")
+    @XmlElement(name = "Alder")
     private int alder;
 
+    // Moxy trenger denne...
     public SimplePojo() {
     }
 

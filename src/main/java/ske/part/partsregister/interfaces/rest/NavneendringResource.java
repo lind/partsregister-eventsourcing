@@ -15,7 +15,7 @@ import ske.part.partsregister.application.PartCommandHandler;
 
 @Path("/navneendring")
 @Consumes(MediaType.APPLICATION_JSON)
-@Produces({ MediaType.APPLICATION_JSON})
+@Produces({ MediaType.APPLICATION_JSON })
 public class NavneendringResource {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -26,7 +26,7 @@ public class NavneendringResource {
         this.commandHandler = commandHandler;
     }
 
-    // Kommando som top ressurs
+    // Kommando som egen REST ressurs
     @POST
     public void navneendring(NavneendringDTO navneendring) {
         logger.debug("/navneendring - partId: {}", navneendring.getId());
@@ -36,6 +36,5 @@ public class NavneendringResource {
                         navneendring.getFornavn(),
                         navneendring.getEtternavn()));
     }
-
 
 }
