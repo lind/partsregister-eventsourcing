@@ -3,27 +3,19 @@
 Test av en enkel [eventsource](https://github.com/eventstore/eventstore/wiki/Event-Sourcing-Basics) versjon av et Partsregister.
 
 Bruker en skrivemodell ([Read model](http://cqrs.wordpress.com/documents/cqrs-and-event-sourcing-synergy/)/[Query model](http://martinfowler.com/bliki/CQRS.html)) 
-som nå ligger i samme JVM og lytter på nye eventer over en EventBus 
+som nå ligger i samme JVM og lytter på nye eventer over en EventBus. Kjører med Jetty og kan lett brukes i en container som [Docker](https://www.docker.com/). 
 
 ## Oppbygging
 * Et tydelig skille mellom lese og skrivemodell.
 * Skrivemodellen skal være en eventstore.
 * Eventer skal publiseres slik at nye lesemodeller kan lages efter behov. (Guava sin [EventBus](https://code.google.com/p/guava-libraries/wiki/EventBusExplained) i eksemplet)
-* Publisering kan gjøres med en køløsning, ala Vert.x, feeds eller en distribuert NoSQL som Hadoop.
+* Publisering kan gjøres med en køløsning, [Vert.x](http://vertx.io/), feeds eller en distribuert NoSQL som [Hadoop](http://hadoop.apache.org/), [MongoDB](http://www.mongodb.org/), [CouchDB](http://couchdb.apache.org/) evt. [EventStore](http://geteventstore.com/).
 * Lesemodellen kan i starten finnes sammen med skrivemodellen og flyttes til annen JVM/container etter behov.
 * Snapshot kan legges på efter behov for bedre ytelse.
 
-## API
-RESTful API som også følger [HATEOAS](http://en.wikipedia.org/wiki/HATEOAS)
+**API**
 
-/parter
-/parter/opprett
-/parter/{id}
-	/flytte
-	/… kommandoer
-	/eventer (også som feeds)
-
-* Hver ressurs har underressurser med kommandoer og eventer. _God strategi?_ -> Kommandoer passer ikke så bra sammen med ressurs og CRUD. Eller kommandoer som "rot" ressurser? /navneendring /flytteendring etc. 
+Hver ressurs har underressurser med kommandoer og eventer. _God strategi?_ -> Kommandoer passer ikke så bra sammen med ressurs og CRUD. Eller kommandoer som "rot" ressurser? /navneendring /flytteendring etc. 
 
 ## Bruk
 ### Embedded server 
@@ -37,14 +29,14 @@ mvn jetty:run
 -> `localhost:8080/rest/`
 
 ### URLer
-_baseurl_/parter
-_baseurl_/parter/{id}/events
-_baseurl_/parter/{id}/endre_navn
-_baseurl_/navneendring
-_baseurl_/partview/{id}
+_baseurl_/parter  
+_baseurl_/parter/{id}/events  
+_baseurl_/parter/{id}/endre_navn  
+_baseurl_/navneendring  
+_baseurl_/partview/{id}  
 
 ## Videre mulgheter
-* Jobbe mer med REST APIet. Få til Jersys linker bl.a.
+* Jobbe mer med REST APIet. Få til Jersys linker bl.a. For å følge [HATEOAS](http://en.wikipedia.org/wiki/HATEOAS).
 * Skille ut lesemodellen som lytter på eventer (i egen pakke nå: ske.part.partview)
 * Tilby et API for å hente eventer (som feeds? hente fra en gitt aggregate root og en sekvens id? hente alle med paging?)
 * Legge til en ny lesemodell som aggregerer informasjon som f.eks. statistikk - enkel [event monitorering](http://en.wikipedia.org/wiki/Event_monitoring) . Lytte på
@@ -59,7 +51,7 @@ kan startes i flere JVMer. (Hvordan håndtere at Vert.x sin eventbus går ned? H
 
 **Kanskje det mest spennende for tiden:** 
 
-* Bruke [Hadoop](http://hadoop.apache.org/) som persistering for eventstore og [Spark](http://spark.apache.org/) for analyse/[Event monitorering](http://en.wikipedia.org/wiki/Event_monitoring)/[Complex event processing](http://en.wikipedia.org/wiki/Complex_event_processing).
+* Bruke [Hadoop](http://hadoop.apache.org/) som persistering for eventstore (eller annen kilde som kan leses av [Spark](http://spark.apache.org/)) og [Spark](http://spark.apache.org/) for analyse/[Event monitorering](http://en.wikipedia.org/wiki/Event_monitoring)/[Complex event processing](http://en.wikipedia.org/wiki/Complex_event_processing).
 * Og evt. [Akka persistence](http://doc.akka.io/docs/akka/current/scala/persistence.html) som Aggregater med en [Journal plugin](http://akka.io/community/) 
 
 **Og videre...**
