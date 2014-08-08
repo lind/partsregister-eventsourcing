@@ -41,7 +41,7 @@ _baseurl_/partview/{id}
 * Tilby et API for å hente eventer (som feeds? hente fra en gitt aggregate root og en sekvens id? hente alle med paging?)
 * Legge til en ny lesemodell som aggregerer informasjon som f.eks. statistikk - enkel [event monitorering](http://en.wikipedia.org/wiki/Event_monitoring) . Lytte på
 eventbussen og aggregere informasjon. REST API til dette. (/rest/partmart?)
-* Bruke [Vert.x sin EventBus](http://vertx.io/core_manual_java.html#the-event-bus) isteden for Guava slik at hanlere
+* Bruke [Vert.x sin EventBus](http://vertx.io/core_manual_java.html#the-event-bus) isteden for Guava slik at handlere
 kan startes i flere JVMer. (Hvordan håndtere at Vert.x sin eventbus går ned? Hvordan håndtere at handlere går ned?)
  API som henter eventer fra en gitt id eller tidspunkt, )
 * Lage [Text Fixtures](https://github.com/junit-team/junit/wiki/Test-fixtures) for enklere å teste Command - EventSource - state til aggregatet. 
