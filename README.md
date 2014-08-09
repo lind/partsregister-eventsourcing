@@ -2,7 +2,7 @@
 
 Test av en enkel [eventsource](https://github.com/eventstore/eventstore/wiki/Event-Sourcing-Basics) versjon av et Partsregister.
 
-Bruker en skrivemodell ([Read model](http://cqrs.wordpress.com/documents/cqrs-and-event-sourcing-synergy/)/[Query model](http://martinfowler.com/bliki/CQRS.html)) 
+Bruker en lesemodell ([Read model](http://cqrs.wordpress.com/documents/cqrs-and-event-sourcing-synergy/)/[Query model](http://martinfowler.com/bliki/CQRS.html)) 
 som nå ligger i samme JVM og lytter på nye eventer over en EventBus. Kjører med Jetty og kan lett brukes i en container som [Docker](https://www.docker.com/). 
 
 ## Oppbygging
